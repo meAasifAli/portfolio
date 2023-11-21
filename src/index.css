@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,600;0,5..1200,700;1,5..1200,500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* font-family: 'Playfair', serif;
+font-family: 'Poppins', sans-serif; */
+
+a {
+  font-family: "Playfair", serif;
+}
+
+p,
+button,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+  font-family: "Poppins", sans-serif;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
