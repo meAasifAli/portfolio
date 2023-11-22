@@ -6,7 +6,7 @@ import { Typography } from '@material-tailwind/react';
 
 const Home = () => {
     return (
-        <div id='home' className='h-screen mx-auto md:max-w-screen-lg flex justify-center flex-col'>
+        <div id='home' className=' mt-4 h-screen mx-auto md:max-w-screen-lg flex justify-center flex-col'>
             <div className=" px-4 gap-4 md:gap-8  flex flex-col md:flex-row-reverse
              md:justify-between items-center">
                 <div data-aos="fade-right"

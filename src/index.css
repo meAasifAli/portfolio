@@ -31,13 +31,3 @@ span {
 ::-webkit-scrollbar {
   display: none;
 }
-.app {
-  background-image: url("../src/assets/bgimg.jpg");
-  background-repeat: no-repeat;
-  height: 130vh;
-}
-@media only screen and (max-width: 600px) {
-  .app {
-    height: 115vh;
-  }
-}

@@ -2,9 +2,11 @@ import { Card, CardHeader, CardBody, Image } from "@nextui-org/react";
 import { projectsData } from "../data";
 import LanguageIcon from '@mui/icons-material/Language';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import { Carousel, Typography } from "@material-tailwind/react";
 
 import { useState } from "react";
 import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure } from "@nextui-org/react";
+
 const Projects = () => {
 
     const [cards, setCards] = useState(projectsData);
@@ -19,10 +21,38 @@ const Projects = () => {
         }
         setSelectedCategory(category);
     };
-
+    const frontendProjects = () => {
+        const projects = projectsData.filter((project) => project.category === "frontend")
+        return projects.length;
+    }
+    const fulltackProjects = () => {
+        const projects = projectsData.filter((project) => project.category === "fullstack")
+        return projects.length;
+    }
     return (
         <div id="projects" className=" md:max-w-screen-lg   mt-4 md:mt-0 w-[95%] mx-auto md:w-full">
             <h2 className="text-primary-900 font-bold py-4 text-center text-3xl animate-wiggle animate-infinite animate-duration-[3000ms] animate-ease-in-out animate-alternate-reverse animate-fill-backwards">My Work</h2>
+
+            <div className="py-4 flex flex-col items-center justify-center">
+                <Typography data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine" variant="h3" className="text-white">
+                    Total <span className="text-3xl text-primary">{projectsData.length}</span> projects
+                </Typography>
+                <div className="flex flex-col md:flex-row items-center  gap-2 md:gap-8">
+                    <Typography data-aos="fade-right"
+                        data-aos-offset="300"
+                        data-aos-easing="ease-in-sine" variant="h3" className="text-white">
+                        Frontend <span className="text-3xl text-primary">{frontendProjects()}</span>
+                    </Typography>
+                    <Typography data-aos="fade-right"
+                        data-aos-offset="300"
+                        data-aos-easing="ease-in-sine" variant="h3" className="text-white">
+                        FullStack <span className="text-3xl text-primary">{fulltackProjects()}</span>
+                    </Typography>
+                </div>
+
+            </div>
             <div className="py-3 md:py-5 flex flex-row gap-2 items-center justify-center md:gap-4">
                 <Button onClick={() => handleFilter('all')} className={selectedCategory === 'all' ? 'active' : ''}>
                     All
@@ -46,12 +76,12 @@ const Projects = () => {
                                     <p className="text-tiny uppercase font-bold">{item?.title}</p>
                                 </CardHeader>
                                 <CardBody className="overflow-visible py-2 flex flex-col justify-between">
-                                    <Image
-                                        alt="Card background"
-                                        className="object-cover rounded-xl"
-                                        src={item?.imgURl}
-                                        width={270}
-                                    />
+                                    <Carousel loop={true} autoplay={true} transition={{ duration: 2 }} className="w-full md:w-[270px] mx-auto">{
+                                        item?.carousel?.map((item, index) =>
+                                            <Image key={index} src={item} />
+                                        )
+                                    }
+                                    </Carousel>
                                     <Button onPress={onOpen} className="mt-2 mb-2 bg-primary">Know More</Button>
                                     <Modal isOpen={isOpen} onOpenChange={onOpenChange}>
                                         <ModalContent>
@@ -67,9 +97,6 @@ const Projects = () => {
                                                     <ModalFooter>
                                                         <Button color="danger" variant="light" onPress={onClose}>
                                                             Close
-                                                        </Button>
-                                                        <Button color="primary" onPress={onClose}>
-                                                            Action
                                                         </Button>
                                                     </ModalFooter>
                                                 </>

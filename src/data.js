@@ -19,12 +19,34 @@ import designer from "./assets/web_design.png"
 import developer from './assets/web_developer.webp'
 import backend from './assets/backendimg.png'
 
-import chat from './assets/chat.png'
-import netflix from './assets/netflix.png'
-import shop from './assets/shop.png'
-import crypto from "./assets/coin.png"
-import pms from './assets/pms.png'
-import crud from './assets/crud.png'
+import chat1 from './assets/chat/chat1.png'
+import chat2 from './assets/chat/chat2.png'
+import netflix1 from './assets/netflix/netflix1.png'
+import netflix2 from './assets/netflix/netflix2.png'
+import netflix3 from './assets/netflix/netflix3.png'
+import netflix4 from './assets/netflix/netflix4.png'
+import shop1 from './assets/shop/shop1.png'
+import shop2 from './assets/shop/shop2.png'
+import shop3 from './assets/shop/shop3.png'
+import crypto1 from "./assets/crypto/crypto1.png"
+import crypto2 from "./assets/crypto/crypto2.png"
+import crypto3 from "./assets/crypto/crypto3.png"
+import crypto4 from "./assets/crypto/crypto4.png"
+import crypto5 from "./assets/crypto/crypto5.png"
+import pms1 from './assets/pms/pms1.png'
+import pms2 from './assets/pms/pms2.png'
+import crud1 from './assets/crud/crud1.png'
+import crud2 from './assets/crud/crud2.png'
+import crud3 from './assets/crud/crud3.png'
+import weather1 from './assets/weather/weather1.png'
+import weather2 from './assets/weather/weather2.png'
+import amazon1 from './assets/amazon/amazon1.png'
+import amazon2 from './assets/amazon/amazon2.png'
+import amazon3 from './assets/amazon/amazon3.png'
+import amazon4 from './assets/amazon/amazon4.png'
+import amazon5 from './assets/amazon/amazon5.png'
+
+
 export const drawerData = [
     {
         id: 1,
@@ -175,33 +197,39 @@ export const expData = [
 export const projectsData = [
     {
         id: 1,
-        imgURl: chat,
         title: "React Chat-App",
         DeployURL: "https://chat-eta-sable.vercel.app",
         GitURl: "https://github.com/Asif45uaha/Chat_app",
         content: "A Basic Text Chatting Application developed Using Reactjs and daisyUI for Frontend as well as Firebase For Backend",
-        category: "frontend"
+        category: "fullstack",
+        carousel: [
+            chat1, chat2
+        ]
 
     },
     {
         id: 2,
-        imgURl: netflix,
         title: "Netflix-UI Clone",
         DeployURL: "https://netflix-application-sigma.vercel.app",
         GitURl: "https://github.com/Asif45uaha/netflix-app.git",
         content: "A Basic Netflix-UI clone developed Using Reactjs and TailwindCss for Frontend as well as Firebase For Backend",
-        category: "fullstack"
+        category: "fullstack",
+        carousel: [
+            netflix1, netflix2, netflix3, netflix4
+        ]
     }
     ,
 
     {
         id: 3,
-        imgURl: shop,
         title: "Mini Shopping Cart",
         DeployURL: "https://shop-gules-five.vercel.app",
         GitURl: "https://github.com/Asif45uaha/shopping-cart-client.git",
         content: "A Basic Full-Responsive Mini-Cart Application developed Using Reactjs,chakraUI for Frontend as well as Nodejs For Razorpay Payment Integration",
-        category: "fullstack"
+        category: "fullstack",
+        carousel: [
+            shop1, shop2, shop3
+        ]
     }
     ,
     {
@@ -211,25 +239,54 @@ export const projectsData = [
         DeployURL: "https://crypto-app-one-blush.vercel.app",
         GitURl: "https://github.com/Asif45uaha/Crypto_app.git",
         content: "A Basic Crypto Application developed Using Reactjs and chakraUI for its Development",
-        category: "frontend"
+        category: "frontend",
+        carousel: [
+            crypto1, crypto2, crypto3, crypto4, crypto5
+        ]
     },
     {
         id: 5,
-        imgURl: pms,
         title: "Project Mgmnt System",
         DeployURL: "https://project-mgmt-tool-liard.vercel.app",
         GitURl: "https://github.com/Asif45uaha/Project-management-Tool.git",
         content: "A Basic Project mgmt System Application developed Using Reactjs and TailwindCss for Frontend as well as Firebase For Backend",
-        category: "fullstack"
+        category: "fullstack",
+        carousel: [
+            pms1, pms2
+        ]
     },
     {
         id: 6,
-        imgURl: crud,
         title: "CRUD operations",
         DeployURL: "https://crud-five-ashy.vercel.app",
         GitURl: "https://github.com/Asif45uaha/crud_client.git",
         content: "A basic CRUD Application developed Using Reactjs and TailwindCss for Frontend as well as Nodejs and MongoDb For Backend",
-        category: "fullstack"
+        category: "fullstack",
+        carousel: [
+            crud1, crud2, crud3
+        ]
+    },
+    {
+        id: 7,
+        title: "Weather App",
+        DeployURL: "https://weather-app-react-navy-eight.vercel.app",
+        GitURl: "https://github.com/Asif45uaha/react-weather-app.git",
+        content: "A basic Weather Application developed Using Reactjs and TailwindCss for Frontend as well as openWeather Api for pulling out the Realtime Weather Data",
+        category: "frontend",
+        carousel: [
+            weather1, weather2
+        ]
+    },
+    {
+        id: 8,
+        title: "Amazon Clone",
+        DeployURL: "https://amazon-amber-zeta.vercel.app",
+        GitURl: "https://github.com/Asif45uaha/amazon_clone.git",
+        content: "Amazon Clone developed Using Reactjs and TailwindCss for Frontend as well as Redux/toolkit for state Managament",
+        category: "frontend",
+        carousel: [
+            amazon1, amazon2, amazon3, amazon4, amazon5
+        ]
     }
 
 ]
@@ -250,7 +307,7 @@ export const serviceData = [
     {
         id: 3,
         icon: backend,
-        title: "Backend Developer",
+        title: "FullStack Developer",
         desc: "I offer backend Service as well For implementing Backend Mostly i use Mern Stack or Firebase or sometimes Django or Flask For this purpose or occassionally I use Php or Nodejs"
     },
 

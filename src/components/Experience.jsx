@@ -1,8 +1,8 @@
-import { Typography } from "@material-tailwind/react";
+import { Typography, Progress } from "@material-tailwind/react";
 import { expData } from '../data'
 import CountUp from 'react-countup';
 import pic from '../assets/exp3.jpeg'
-import ProgressBar from "@ramonak/react-progress-bar";
+
 const Experience = () => {
     return (
         <div id="experience" className="h-screen md:max-w-screen-lg mt-4 md:mt-0 w-[95%] mx-auto md:w-full">
@@ -28,9 +28,9 @@ const Experience = () => {
                                             <CountUp start={0} end={item?.progressVal} delay={0} />
                                         </Typography>
                                     </div>
-                                    <ProgressBar data-aos="fade-right"
+                                    <Progress data-aos="fade-right"
                                         data-aos-offset="300"
-                                        data-aos-easing="ease-in-sine" completed={item?.progressVal} bgColor="blue" height="15px" animateOnRender={true} transitionTimingFunction="ease-in-out" />
+                                        data-aos-easing="ease-in-sine" color="gray" value={item?.progressVal} />
                                 </div>
                             )
                         })
