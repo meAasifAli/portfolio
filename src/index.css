@@ -6,6 +6,12 @@
 /* font-family: 'Playfair', serif;
 font-family: 'Poppins', sans-serif; */
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 a {
   font-family: "Playfair", serif;
 }
@@ -24,4 +30,14 @@ span {
 
 ::-webkit-scrollbar {
   display: none;
+}
+.app {
+  background-image: url("../src/assets/bgimg.jpg");
+  background-repeat: no-repeat;
+  height: 130vh;
+}
+@media only screen and (max-width: 600px) {
+  .app {
+    height: 115vh;
+  }
 }

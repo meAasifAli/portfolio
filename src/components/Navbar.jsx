@@ -23,7 +23,7 @@ const Header = () => {
     }
     return (
         <>
-            <header className="z-[30] flex items-center justify-around text-2xl  text-primary h-[90px] w-[95%] mt-4 md:w-[75%] mx-auto rounded-lg sticky top-1">
+            <header className="z-[30] border-1 border-b-white max-w-screen-lg border-t-0 border-l-0 border-r-0 flex items-center justify-around text-2xl  text-primary h-[90px] w-[95%] mt-4 md:w-[75%] mx-auto rounded-lg sticky top-1">
                 <div className="flex flex-row items-center justify-center gap-1 md:gap-4">
                     <h1 className="text-2xl font-semibold">AASIF ALI</h1>
                 </div>

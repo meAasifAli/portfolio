@@ -20,7 +20,7 @@ const About = () => {
         }
     ];
     return (
-        <div id="about" className="h-screen bg-blue-900  mt-4 md:mt-0 w-[95%] mx-auto md:w-full">
+        <div id="about" className="h-screen bg-blue-900  mt-4 md:mt-0 w-full mx-auto md:w-full">
             <h2 className="text-primary-900 font-bold py-4 text-center text-3xl animate-wiggle animate-infinite animate-duration-[3000ms] animate-ease-in-out animate-alternate-reverse animate-fill-backwards">About Me</h2>
             <div className="flex flex-col md:flex-row  md:justify-between items-center h-[110vh] md:h-screen gap:4 md:gap-16 md:max-w-screen-lg mx-auto">
                 <div data-aos="fade-right"
