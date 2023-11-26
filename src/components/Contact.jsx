@@ -7,7 +7,7 @@ import {
 } from "@material-tailwind/react";
 const Contact = () => {
     return (
-        <div id="contact" className="h-screen md:mt-4 md:h-[110vh] bg-blue-900 md:max-w-screen-lgbg-blue-900  mt-4 w-[95%] mx-auto md:w-full">
+        <div id="contact" className="h-screen bg-gradient-to-b  from-black/80 to-blue-900  md:mt-4 md:h-[110vh] bg-blue-900 md:max-w-screen-lgbg-blue-900  mt-4 w-[95%] mx-auto md:w-full">
             <h2 className="text-primary-900 font-bold py-4 text-center text-3xl animate-wiggle animate-infinite animate-duration-[3000ms] animate-ease-in-out animate-alternate-reverse animate-fill-backwards">Connect With Me</h2>
             <div className="my-4 flex flex-col h-screen justify-center items-center">
                 <Card data-aos="fade-right"

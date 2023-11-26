@@ -10,7 +10,7 @@ import Services from "./components/Services"
 
 function App() {
   return (
-    <div className="app">
+    <div className="md:max-w-screen-xl mx-auto">
       <Navbar />
       <Home />
       <About />

@@ -5,13 +5,13 @@ import pic from '../assets/exp3.jpeg'
 
 const Experience = () => {
     return (
-        <div id="experience" className="h-screen md:max-w-screen-lg mt-4 md:mt-0 w-[95%] mx-auto md:w-full">
+        <div id="experience" className="h-screen bg-gradient-to-b  from-black/80 to-gray-700 md:max-w-screen-lg mt-4 md:mt-0  mx-auto md:w-full">
             <h2 className="text-primary-900 font-bold py-4 text-center text-3xl animate-wiggle animate-infinite animate-duration-[3000ms] animate-ease-in-out animate-alternate-reverse animate-fill-backwards">Experience</h2>
             <div className=" md:flex md:flex-row md:gap-6 md:items-center" data-aos="fade-right"
                 data-aos-offset="300"
                 data-aos-easing="ease-in-sine">
                 <img src={pic} alt="error" className="hidden md:block md:w-[500px] md:h-[530px] rounded-md" />
-                <div className="w-full flex flex-col gap-4 justify-center h-screen">
+                <div className="w-full flex flex-col gap-4 justify-center h-screen px-2">
                     {
                         expData.map((item, index) => {
                             return (

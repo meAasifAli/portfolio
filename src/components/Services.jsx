@@ -2,7 +2,7 @@ import { Typography, Timeline, TimelineHeader, TimelineItem, TimelineConnector, 
 import { serviceData } from "../data"
 const Services = () => {
     return (
-        <div id="services" className="h-[150vh] md:h-[110vh] bg-blue-900 md:max-w-screen-lgbg-blue-900  mt-4 md:mt-0 w-[95%] mx-auto md:w-full">
+        <div id="services" className="h-[150vh] md:h-[130vh] bg-gradient-to-b  from-black/80 to-blue-900   bg-blue-900 md:max-w-screen-lgbg-blue-900  mt-4 md:mt-0 mx-auto md:w-full">
             <h2 className="text-primary-900 font-bold py-4 text-center text-3xl animate-wiggle animate-infinite animate-duration-[3000ms] animate-ease-in-out animate-alternate-reverse animate-fill-backwards">What can I Do</h2>
             <Timeline className='my-8 w-[90%] md:w-[65%] mx-auto'>
                 {

@@ -22,12 +22,12 @@ const Header = () => {
         setOpen(false)
     }
     return (
-        <>
-            <header className="z-[30] border-1 border-b-white max-w-screen-lg border-t-0 border-l-0 border-r-0 flex items-center justify-around text-2xl  text-primary h-[90px]  mt-4  mx-auto rounded-lg sticky top-1">
+        <div className="sticky top-1 ">
+            <header className="z-[30]  bg-gradient-to-b  from-gray-700 to-black/80  flex items-center justify-around text-2xl  text-primary h-[90px] mx-auto  ">
                 <div className="flex flex-row items-center justify-center gap-1 md:gap-4">
                     <h1 className="text-2xl font-semibold">AASIF ALI</h1>
                 </div>
-                <div className="hidden  md:flex items-center justify-between gap-[20px] cursor-pointer text-xl ">
+                <div className="hidden md:max-w-screen-lg md:flex items-center justify-between gap-[20px] cursor-pointer text-xl ">
                     <a href="#home" className="hover:border-b-2 border-pink-700 hover:transition-all duration-600 ease-in-out"><p >Home</p></a>
                     <a href="#about" className="hover:border-b-2 border-pink-700 hover:transition-all duration-600 ease-in-out"><p>About</p></a>
                     <a href="#experience" className="hover:border-b-2 border-pink-700 hover:transition-all duration-600 ease-in-out"><p>Experience</p></a>
@@ -67,7 +67,7 @@ const Header = () => {
                 </Drawer>
             </header>
 
-        </>
+        </div>
     )
 }
 export default Header

@@ -1,4 +1,4 @@
-import bg from '../assets/avatar1.png'
+import bg from '../assets/bgNew2.png'
 import resume from '../assets/resume.pdf'
 import DownloadIcon from '@mui/icons-material/Download';
 import CallIcon from '@mui/icons-material/Call';
@@ -6,13 +6,13 @@ import { Typography } from '@material-tailwind/react';
 
 const Home = () => {
     return (
-        <div id='home' className=' mt-4 h-screen mx-auto md:max-w-screen-lg flex justify-center flex-col'>
-            <div className=" px-4 gap-4 md:gap-8  flex flex-col md:flex-row-reverse
+        <div id='home' className='mt-1 bg-gradient-to-b  from-gray-700 to-black/80  h-screen mx-auto flex justify-center flex-col'>
+            <div className=" px-4 gap-4 md:gap-8  md:max-w-screen-lg mx-auto flex flex-col md:flex-row-reverse
              md:justify-between items-center">
                 <div data-aos="fade-right"
                     data-aos-offset="300"
-                    data-aos-easing="ease-in-sine" className="border-3 border-primary rounded-full animate-rotate-y animate-infinite animate-duration-[6000ms] animate-ease-in-out animate-alternate-reverse animate-fill-backwards bg-primary-100 ">
-                    <img src={bg} alt="error" className='border-3 border-primary rounded-full object-contain  md:w-[90%] h-full ' />
+                    data-aos-easing="ease-in-sine" >
+                    <img src={bg} alt="error" className='object-cover w-[800px] h-[350px] md:h-[400px] bg-primary rounded-full' />
                 </div>
                 <div className='flex flex-col gap-2 md:gap-4'>
                     <Typography data-aos="fade-right"
