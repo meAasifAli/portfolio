@@ -7,13 +7,13 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import {
     Drawer,
-    IconButton,
+    IconButton
 } from "@material-tailwind/react";
-
-
+import { UserAuth } from '../context/AuthContext'
+import { Toaster, toast } from 'react-hot-toast'
 const Header = () => {
 
-
+    const { currUser, SigninWithGoogle, logOut } = UserAuth()
     const [open, setOpen] = useState(false)
     const openDrawer = () => {
         setOpen(!open)
@@ -21,9 +21,32 @@ const Header = () => {
     const closeDrawer = () => {
         setOpen(false)
     }
+    const handleLogin = async () => {
+        try {
+            await SigninWithGoogle()
+            toast.success("Thanks For logging in", {
+                duration: 6000,
+                position: "top-center"
+            })
+        } catch (error) {
+            console.log(error);
+            toast.error("Couldn't login", {
+                duration: 6000,
+                position: "top-center"
+            })
+        }
+
+    }
+    const handleLogout = async () => {
+        await logOut()
+        toast.success("You Are Logged Out please Login Again!!", {
+            duration: 6000,
+            position: "top-center"
+        })
+    }
     return (
-        <div className="sticky top-1 ">
-            <header className="z-[30]  bg-gradient-to-b  from-gray-700 to-black/80  flex items-center justify-around text-2xl  text-primary h-[90px] mx-auto  ">
+        <div className="sticky top-1 z-[31] ">
+            <header className=" bg-gradient-to-tr  from-gray-700 via-transparent to-black/80  flex items-center justify-around text-2xl  text-primary h-[90px] mx-auto  ">
                 <div className="flex flex-row items-center justify-center gap-1 md:gap-4">
                     <h1 className="text-2xl font-semibold">AASIF ALI</h1>
                 </div>
@@ -34,15 +57,21 @@ const Header = () => {
                     <a href="#services" className="hover:border-b-2 border-pink-700 hover:transition-all duration-600 ease-in-out"><p>Services</p></a>
                     <a href="#projects" className="hover:border-b-2 border-pink-700 hover:transition-all duration-600 ease-in-out"><p>Projects</p></a>
                     <a href="#contact" className="hover:border-b-2 border-pink-700 hover:transition-all duration-600 ease-in-out"><p>Contact</p></a>
-                    <div className="mt-2 flex items-center gap-2">
-                        <Button color="green" >Login</Button>
+                    <div className="mt-2 flex items-center gap-2 justify-center">
+                        {
+                            currUser ? <div className="flex flex-row items-center gap-2">
+                                <p>{currUser?.displayName}</p>
+                                <Button onClick={handleLogout} color="blue">Logout</Button>
+                            </div> : <Button onClick={handleLogin} color="green">Login</Button>
+                        }
+                        <Toaster />
                     </div>
 
                 </div>
                 <div className="md:hidden ">
                     <MenuIcon className="md:hidden" onClick={openDrawer} />
                 </div>
-                <Drawer open={open} onClose={closeDrawer} placement="left" className="bg-black flex flex-col justify-around">
+                <Drawer open={open} onClose={closeDrawer} placement="left" className="bg-black md:hidden  flex flex-col justify-around">
                     <div className="mb-6 mt-4 flex items-center justify-between px-5">
                         <IconButton variant="text" color="blue-gray" onClick={closeDrawer}>
                             <CloseIcon size={35} onClick={closeDrawer} />
@@ -57,7 +86,13 @@ const Header = () => {
                         <a href="#contact" className="hover:border-b-2 border-pink-700 hover:transition-all duration-600 ease-in-out"><p>Contact</p></a>
                     </div>
                     <div className="mt-8 px-4 flex items-center justify-center gap-2">
-                        <Button color="green" >Login</Button>
+                        {
+                            currUser ? <div className="flex flex-row items-center gap-2">
+                                <p>{currUser?.displayName}</p>
+                                <Button onClick={handleLogout} color="blue">Logout</Button>
+                            </div> : <Button onClick={handleLogin} color="green">Login</Button>
+                        }
+                        <Toaster />
                     </div>
                     <div className=" mt-2 flex flex-row items-center gap-[15px] justify-center md:justify-start md:ml-4 py-4">
                         <a href="https://github.com/Asif45uaha" className='bg-black p-3 rounded-full'><GitHubIcon size={30} color='black' /></a>

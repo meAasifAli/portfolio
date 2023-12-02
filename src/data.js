@@ -45,7 +45,11 @@ import amazon2 from './assets/amazon/amazon2.png'
 import amazon3 from './assets/amazon/amazon3.png'
 import amazon4 from './assets/amazon/amazon4.png'
 import amazon5 from './assets/amazon/amazon5.png'
-
+import atm1 from './assets/atm/atm1.png'
+import atm2 from './assets/atm/atm2.png'
+import atm3 from './assets/atm/atm3.png'
+import atm4 from './assets/atm/atm4.png'
+import atm5 from './assets/atm/atm5.png'
 
 export const drawerData = [
     {
@@ -287,6 +291,18 @@ export const projectsData = [
         carousel: [
             amazon1, amazon2, amazon3, amazon4, amazon5
         ]
+    },
+    {
+        id: 9,
+        title: "ATM Machine",
+        DeployURL: "https://atm-m0v6fo0li-asifali45.vercel.app",
+        GitURl: "https://github.com/Asif45uaha/ATM-Project.git",
+        content: "ATM Clone Built using Html,Css and Js,Users can Credit,deposit the Amount,Make Hassle-Free balance Enquiries as well as can apply for instant Loan",
+        category: "frontend",
+        carousel: [
+            atm1, atm2, atm3, atm4, atm5
+        ]
+
     }
 
 ]
