@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { Button } from "@material-tailwind/react";
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
@@ -44,9 +44,11 @@ const Header = () => {
             position: "top-center"
         })
     }
+
+
     return (
-        <div className="sticky top-1 z-[31] ">
-            <header className=" bg-gradient-to-tr  from-gray-700 via-transparent to-black/80  flex items-center justify-around text-2xl  text-primary h-[90px] mx-auto  ">
+        <div className="sticky top-0 z-[31]">
+            <header className="bg-black  flex items-center justify-around text-2xl  text-primary h-[90px] mx-auto">
                 <div className="flex flex-row items-center justify-center gap-1 md:gap-4">
                     <h1 className="text-2xl font-semibold">AASIF ALI</h1>
                 </div>

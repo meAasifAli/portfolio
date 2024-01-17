@@ -15,7 +15,7 @@ const Home = () => {
                     <div data-aos="fade-right"
                         data-aos-offset="300"
                         data-aos-easing="ease-in-sine">
-                        <img src={bg} alt="error" className='z-[30] object-cover w-[400px] h-[350px] border-3 border-primary md:w-[800px] md:h-[400px] bg-primary rounded-full' />
+                        <img src={bg} alt="error" className='z-[30] object-cover w-[400px] h-[350px] border-3 border-primary md:w-[800px] md:h-[400px] bg-primary rounded-full ' />
                     </div>
                     <div className='flex flex-col gap-2 md:gap-4 transition 0.3s ease-in-out'>
                         <div data-aos="fade-right"

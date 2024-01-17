@@ -4,7 +4,7 @@ import Divider from './Divider'
 const Contact = () => {
 
     return (
-        <div id="contact" className="z-[30] h-screen bg-gradient-to-tl  from-red-700 via-black/60 to-blue-900  md:h-[110vh] bg-blue-900 md:max-w-screen-xl mx-auto md:w-full">
+        <div id="contact" className="z-[30] h-screen bg-gradient-to-bl from-blue-900 to-black/80  md:h-[110vh]  md:max-w-screen-xl mx-auto md:w-full">
             <h2 className="text-primary-900 font-bold py-4 text-center text-3xl animate-wiggle animate-infinite animate-duration-[3000ms] animate-ease-in-out animate-alternate-reverse animate-fill-backwards">Connect With Me</h2>
             <Divider />
             <div className='md:w-[70%] w-full flex justify-center h-[99vh] p-4 bg-transparent mx-auto'>

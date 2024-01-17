@@ -50,7 +50,10 @@ import atm2 from './assets/atm/atm2.png'
 import atm3 from './assets/atm/atm3.png'
 import atm4 from './assets/atm/atm4.png'
 import atm5 from './assets/atm/atm5.png'
-
+import ecom1 from './assets/ecom_assets/ecom1.png'
+import ecom2 from './assets/ecom_assets/ecom2.png'
+import ecom3 from './assets/ecom_assets/ecom3.png'
+import ecom4 from './assets/ecom_assets/ecom4.png'
 export const drawerData = [
     {
         id: 1,
@@ -303,6 +306,17 @@ export const projectsData = [
             atm1, atm2, atm3, atm4, atm5
         ]
 
+    },
+    {
+        id: 10,
+        title: "MERN Ecommerce APP",
+        DeployURL: "https://mern-ecommerce-l443.onrender.com",
+        GitURl: "https://github.com/Asif45uaha/mern_ecommerce.git",
+        content: "Ecommerce Application Built Using Mern Stack Technologies,Users can add products to their cart/wishlist and can purchase them.This App has Test payment Integration as well.Users Can filter Different Products as well as can search Several Products in this App. Users can track their Orders as Well",
+        category: "fullstack",
+        carousel: [
+            ecom1, ecom2, ecom3, ecom4
+        ]
     }
 
 ]
