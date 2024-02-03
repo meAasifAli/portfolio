@@ -12,8 +12,10 @@ import {
 import { UserAuth } from '../context/AuthContext'
 import { Toaster, toast } from 'react-hot-toast'
 import { navData } from "../data";
+import { useLocation } from 'react-router-dom'
 const Header = () => {
-
+    const { pathname } = useLocation()
+    // console.log(pathname);
     const { currUser, SigninWithGoogle, logOut } = UserAuth()
     const [open, setOpen] = useState(false)
     const openDrawer = () => {
@@ -49,7 +51,7 @@ const Header = () => {
 
     return (
         <div className="sticky top-0 z-[31] ">
-            <header className="flex items-center justify-around bg-clip-padding backdrop-filter backdrop-blur-3xl md:backdrop-blur-0 bg-opacity-20 text-2xl  text-primary h-[90px] md:max-w-screen-xl mx-auto">
+            <header className="flex items-center justify-around  text-2xl  text-primary h-[90px] md:max-w-screen-xl mx-auto">
                 <div className="flex flex-row items-center justify-center">
                     <h1 className="text-2xl font-semibold">AASIF ALI</h1>
                 </div>
@@ -57,7 +59,7 @@ const Header = () => {
                     {
                         navData.map((item, id) => {
                             return (
-                                <a key={id} href={item.href} className="hover:border-b-2 border-pink-700 hover:transition-all duration-600 ease-in-out"><p >{item?.title}</p></a>
+                                <a key={id} href={item.href} className={`${item?.href === pathname ? "border border-blue-500 p-3 rounded-full bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10" : ""}`}><p >{item?.title}</p></a>
                             )
                         })
                     }
@@ -84,7 +86,9 @@ const Header = () => {
                     <div className="px-5 mt-8 flex flex-col  justify-center items-center text-2xl gap-5">
                         {
                             navData.map((item, id) => {
-                                return <a key={id} href={item.href} className="hover:border-b-2 border-pink-700 hover:transition-all duration-600 ease-in-out"><p >{item?.title}</p></a>
+                                return (
+                                    <a key={id} href={item.href} className={`${item?.href === pathname ? "border border-blue-500 p-2 rounded-full bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10" : ""}`}><p >{item?.title}</p></a>
+                                )
                             })
                         }
                     </div>

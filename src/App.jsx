@@ -19,21 +19,17 @@ function App() {
   }, [])
   return (
     <div className="md:max-w-screen-xl w-full mx-auto">
-      {
-        loading ? <UncontrolledLottie /> : <> <Navbar />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/experience" element={<Experience />} />
-            <Route path="/services" element={<Services />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/location" element={<Map />} />
-          </Routes>
-          <Footer />
-        </>
-      }
-
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/experience" element={<Experience />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/location" element={<Map />} />
+      </Routes>
+      <Footer />
     </div>
   )
 }
