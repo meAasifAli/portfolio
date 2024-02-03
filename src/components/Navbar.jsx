@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import { Button } from "@material-tailwind/react";
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
@@ -85,7 +85,6 @@ const Header = () => {
                         {
                             navData.map((item, id) => {
                                 return <a key={id} href={item.href} className="hover:border-b-2 border-pink-700 hover:transition-all duration-600 ease-in-out"><p >{item?.title}</p></a>
-
                             })
                         }
                     </div>
