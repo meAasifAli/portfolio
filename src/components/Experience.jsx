@@ -5,9 +5,8 @@ import SKillLottie from "../animations/SkillLottie";
 import { CircularProgress } from "@nextui-org/react";
 const Experience = () => {
     return (
-        <div id="experience" className="z-[30] bg-gradient-to-b  from-black/80 to-gray-700  mt-4 md:mt-0  mx-auto md:w-full">
+        <div id="experience" className="z-[30]   mt-4 md:mt-0  mx-auto md:w-full">
             <h2 className="text-primary-900 font-bold py-4 text-center text-3xl animate-wiggle animate-infinite animate-duration-[3000ms] animate-ease-in-out animate-alternate-reverse animate-fill-backwards">Experience</h2>
-            <Divider />
             <div className="md:max-w-screen-lg mx-auto transition-all duration-200 delay-100 ease-in-out flex flex-col gap-0 md:flex-row md:gap-6 md:items-center" data-aos="fade-right"
                 data-aos-offset="300"
                 data-aos-easing="ease-in-sine">
@@ -16,9 +15,7 @@ const Experience = () => {
                     {
                         expData.map((item, index) => {
                             return (
-                                <div key={index} data-aos="fade-right"
-                                    data-aos-offset="300"
-                                    data-aos-easing="ease-in-sine" className=' flex flex-col gap-2 items-center justify-center shadow-xl p-4 bg-gradient-to-br from-primary-300 to-black/80 mt-4 cursor-pointer rounded-xl hover:scale-110 transition-all duration-200 delay-100 ease-in-out group'>
+                                <div key={index} className=' flex flex-col gap-2 items-center justify-center shadow-xl p-4 bg-clip-padding backdrop-filter backdrop-blur-3xl bg-opacity-20 mt-4 cursor-pointer rounded-xl hover:scale-110 transition-all duration-200 delay-100 ease-in-out group'>
                                     <CircularProgress
                                         size="lg"
                                         value={item?.progressVal}

@@ -54,43 +54,44 @@ import ecom1 from './assets/ecom_assets/ecom1.png'
 import ecom2 from './assets/ecom_assets/ecom2.png'
 import ecom3 from './assets/ecom_assets/ecom3.png'
 import ecom4 from './assets/ecom_assets/ecom4.png'
-export const drawerData = [
+
+export const navData = [
     {
         id: 1,
         img: home,
         title: "Home",
-        href: "home"
+        href: "/"
     }
     ,
     {
         id: 2,
         img: about,
         title: "About",
-        href: "about"
+        href: "/about"
     },
     {
         id: 3,
         img: exp,
         title: "Experience",
-        href: "experience"
+        href: "/experience"
     },
     {
         id: 4,
         img: service,
         title: "Services",
-        href: "services"
+        href: "/services"
     },
     {
         id: 5,
         img: project,
         title: "Projects",
-        href: "projects"
+        href: "/projects"
     },
     {
         id: 6,
         img: contact,
         title: "Contact",
-        href: "contact"
+        href: "/contact"
     }
 ]
 export const eduData = [{

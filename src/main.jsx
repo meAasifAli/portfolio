@@ -6,13 +6,16 @@ import './index.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { AuthProvider } from './context/AuthContext.jsx';
+import { BrowserRouter } from 'react-router-dom';
 AOS.init();
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <AuthProvider>
-      <NextUIProvider>
-        <App />
-      </NextUIProvider>
-    </AuthProvider>
+    <BrowserRouter>
+      <AuthProvider>
+        <NextUIProvider>
+          <App />
+        </NextUIProvider>
+      </AuthProvider>
+    </BrowserRouter>
   </React.StrictMode>,
 )

@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import { Routes, Route } from 'react-router-dom'
 import About from "./components/About"
 import Contact from "./components/Contact"
 import Experience from "./components/Experience"
@@ -17,16 +18,18 @@ function App() {
     }, [3000])
   }, [])
   return (
-    <div className="md:max-w-screen-xl mx-auto">
+    <div className="md:max-w-screen-xl w-full mx-auto">
       {
         loading ? <UncontrolledLottie /> : <> <Navbar />
-          <Home />
-          <About />
-          <Experience />
-          <Services />
-          <Projects />
-          <Contact />
-          <Map />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/experience" element={<Experience />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/location" element={<Map />} />
+          </Routes>
           <Footer />
         </>
       }

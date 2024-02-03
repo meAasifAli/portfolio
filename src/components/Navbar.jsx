@@ -11,6 +11,7 @@ import {
 } from "@material-tailwind/react";
 import { UserAuth } from '../context/AuthContext'
 import { Toaster, toast } from 'react-hot-toast'
+import { navData } from "../data";
 const Header = () => {
 
     const { currUser, SigninWithGoogle, logOut } = UserAuth()
@@ -47,18 +48,19 @@ const Header = () => {
 
 
     return (
-        <div className="sticky top-0 z-[31]">
-            <header className="bg-black  flex items-center justify-around text-2xl  text-primary h-[90px] mx-auto">
-                <div className="flex flex-row items-center justify-center gap-1 md:gap-4">
+        <div className="sticky top-0 z-[31] ">
+            <header className="flex items-center justify-around bg-clip-padding backdrop-filter backdrop-blur-3xl md:backdrop-blur-0 bg-opacity-20 text-2xl  text-primary h-[90px] md:max-w-screen-xl mx-auto">
+                <div className="flex flex-row items-center justify-center">
                     <h1 className="text-2xl font-semibold">AASIF ALI</h1>
                 </div>
-                <div className="hidden md:max-w-screen-lg md:flex items-center justify-between gap-[20px] cursor-pointer text-xl ">
-                    <a href="#home" className="hover:border-b-2 border-pink-700 hover:transition-all duration-600 ease-in-out"><p >Home</p></a>
-                    <a href="#about" className="hover:border-b-2 border-pink-700 hover:transition-all duration-600 ease-in-out"><p>About</p></a>
-                    <a href="#experience" className="hover:border-b-2 border-pink-700 hover:transition-all duration-600 ease-in-out"><p>Experience</p></a>
-                    <a href="#services" className="hover:border-b-2 border-pink-700 hover:transition-all duration-600 ease-in-out"><p>Services</p></a>
-                    <a href="#projects" className="hover:border-b-2 border-pink-700 hover:transition-all duration-600 ease-in-out"><p>Projects</p></a>
-                    <a href="#contact" className="hover:border-b-2 border-pink-700 hover:transition-all duration-600 ease-in-out"><p>Contact</p></a>
+                <div className="hidden  md:flex items-center justify-between gap-[20px] cursor-pointer text-xl ">
+                    {
+                        navData.map((item, id) => {
+                            return (
+                                <a key={id} href={item.href} className="hover:border-b-2 border-pink-700 hover:transition-all duration-600 ease-in-out"><p >{item?.title}</p></a>
+                            )
+                        })
+                    }
                     <div className="mt-2 flex items-center gap-2 justify-center">
                         {
                             currUser ? <div className="flex flex-row items-center gap-2">
@@ -80,12 +82,12 @@ const Header = () => {
                         </IconButton>
                     </div>
                     <div className="px-5 mt-8 flex flex-col  justify-center items-center text-2xl gap-5">
-                        <a href="#home" className="hover:border-b-2 border-pink-700 hover:transition-all duration-600 ease-in-out"><p >Home</p></a>
-                        <a href="#about" className="hover:border-b-2 border-pink-700 hover:transition-all duration-600 ease-in-out"><p>About</p></a>
-                        <a href="#experience" className="hover:border-b-2 border-pink-700 hover:transition-all duration-600 ease-in-out"><p>Experience</p></a>
-                        <a href="#services" className="hover:border-b-2 border-pink-700 hover:transition-all duration-600 ease-in-out"><p>Services</p></a>
-                        <a href="#projects" className="hover:border-b-2 border-pink-700 hover:transition-all duration-600 ease-in-out"><p>Projects</p></a>
-                        <a href="#contact" className="hover:border-b-2 border-pink-700 hover:transition-all duration-600 ease-in-out"><p>Contact</p></a>
+                        {
+                            navData.map((item, id) => {
+                                return <a key={id} href={item.href} className="hover:border-b-2 border-pink-700 hover:transition-all duration-600 ease-in-out"><p >{item?.title}</p></a>
+
+                            })
+                        }
                     </div>
                     <div className="mt-8 px-4 flex items-center justify-center gap-2">
                         {

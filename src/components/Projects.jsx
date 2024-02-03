@@ -27,9 +27,9 @@ const Projects = () => {
     }
 
     return (
-        <div id="projects" className="z-[30] bg-gradient-to-tr pb-4  from-black/80  to-gray-700  mx-auto md:w-full">
+        <div id="projects" className="z-[30] bg-gradient-to-tr pb-4   mx-auto md:w-full">
             <h2 className="text-primary-900 font-bold py-4 text-center text-3xl animate-wiggle animate-infinite animate-duration-[3000ms] animate-ease-in-out animate-alternate-reverse animate-fill-backwards">My Work</h2>
-            <Divider />
+
             <div className="transition-all duration-200 delay-100 ease-in-out md:max-w-screen-lg mx-auto py-4 flex flex-col items-center justify-center ">
                 <Typography data-aos="fade-right"
                     data-aos-offset="300"
@@ -63,9 +63,7 @@ const Projects = () => {
                 {
                     cards.map((item, index) => {
                         return (
-                            <Card data-aos="fade-right"
-                                data-aos-offset="300"
-                                data-aos-easing="ease-in-sine" className="py-4 w-[95%] md:h-[380px] mx-auto  shadow-md shadow-primary bg-gradient-to-bl  from-primary-300 to-red-800 via-transparent md:w-[30%]" key={index}>
+                            <Card className="py-4 w-[95%] md:h-[380px] mx-auto  shadow-md shadow-primary bg-clip-padding backdrop-filter backdrop-blur-3xl bg-opacity-20 via-transparent md:w-[30%]" key={index}>
                                 <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
                                     <p className="text-tiny uppercase font-bold">{item?.title}</p>
                                 </CardHeader>
