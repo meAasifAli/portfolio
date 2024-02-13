@@ -11,11 +11,6 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url(./assets/bg/bg2.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
 }
 a {
   font-family: "Playfair", serif;

@@ -1,6 +1,4 @@
 
-import Divider from './Divider'
-
 const Contact = () => {
 
     return (
