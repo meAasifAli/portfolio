@@ -1,6 +1,6 @@
 
 import { expData } from '../data'
-import Divider from "./Divider";
+
 import SKillLottie from "../animations/SkillLottie";
 import { CircularProgress } from "@nextui-org/react";
 const Experience = () => {
@@ -15,16 +15,16 @@ const Experience = () => {
                     {
                         expData.map((item, index) => {
                             return (
-                                <div key={index} className=' flex flex-col gap-2 items-center justify-center shadow-xl p-4 bg-clip-padding backdrop-filter backdrop-blur-3xl bg-opacity-20 mt-4 cursor-pointer rounded-xl hover:scale-110 transition-all duration-200 delay-100 ease-in-out group'>
+                                <div key={index} className='bg-primary-500  flex flex-col gap-2 items-center justify-center shadow-xl p-4 bg-clip-padding backdrop-filter backdrop-blur-3xl bg-opacity-20 mt-4 cursor-pointer rounded-xl hover:scale-110 transition-all duration-200 delay-100 ease-in-out group'>
                                     <CircularProgress
                                         size="lg"
                                         value={item?.progressVal}
                                         color={index % 2 === 0 ? "primary" : "success"}
                                         showValueLabel={true}
                                         aria-label='jksdnfdj'
-                                        className='group-hover:rotate-180 group-hover:hue-rotate-180 transition-all duration-200 delay-100 ease-in-out'
+                                        className='transition-all duration-200 delay-100 ease-in-out'
                                     />
-                                    <p>{item?.title?.slice(0, 5)}..</p>
+                                    <p>{item?.title}</p>
                                 </div>
                             )
                         })

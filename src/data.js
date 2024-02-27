@@ -5,15 +5,7 @@ import service from './assets/service2.png'
 import project from './assets/project1.png'
 import contact from './assets/contact2.webp'
 
-import Cp from './assets/c-document.png';
-import Py from './assets/python.png';
-import html from './assets/html1.png';
-import Javascript from './assets/js1.png';
-import react from './assets/react.png';
-import mysql from './assets/mysql.png'
-import tailwind from './assets//tailwind1.png'
-import Css from './assets/css.jpg'
-import Mongo from "./assets/mongodb1.png"
+
 
 import designer from "./assets/web_design.png"
 import developer from './assets/web_developer.webp'
@@ -148,57 +140,68 @@ export const eduData = [{
 export const expData = [
     {
         id: 1,
-        img: html,
         title: "Html",
         progressVal: 80,
     },
     {
         id: 2,
-        img: Css,
         title: "Css",
         progressVal: 60,
     },
     {
         id: 3,
-        img: Javascript,
         title: "Js",
         progressVal: 70,
     },
     {
         id: 4,
-        img: Py,
         title: "Python",
         progressVal: 50,
     },
     {
         id: 5,
-        img: Cp,
         title: "C",
         progressVal: 70,
     },
     {
         id: 6,
-        img: react,
         title: "React",
         progressVal: 70,
     },
     {
         id: 7,
-        img: mysql,
         title: "Mysql",
         progressVal: 50,
     },
     {
         id: 8,
-        img: tailwind,
         title: "TailwindCss",
         progressVal: 60,
     },
     {
         id: 9,
-        img: Mongo,
         title: "MongoDB",
         progressVal: 70,
+    },
+    {
+        id: 10,
+        title: "Next.js",
+        progressVal: 50
+    },
+    {
+        id: 11,
+        title: "Firebase",
+        progressVal: 60
+    },
+    {
+        id: 12,
+        title: "REST API",
+        progressVal: 80
+    },
+    {
+        id: 13,
+        title: "Node.js",
+        progressVal: 60
     },
 ]
 

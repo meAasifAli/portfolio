@@ -50,7 +50,7 @@ const Header = () => {
 
 
     return (
-        <div className="sticky top-0 z-[31] ">
+        <div className="z-[31] ">
             <header className="flex items-center justify-around  text-2xl  text-primary h-[90px] md:max-w-screen-xl mx-auto">
                 <div className="flex flex-row items-center justify-center">
                     <h1 className="text-2xl font-semibold">AASIF ALI</h1>
