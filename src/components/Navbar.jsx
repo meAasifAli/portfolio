@@ -1,5 +1,4 @@
 import { useState } from "react"
-import { Button } from "@material-tailwind/react";
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -9,14 +8,13 @@ import {
     Drawer,
     IconButton
 } from "@material-tailwind/react";
-import { UserAuth } from '../context/AuthContext'
-import { Toaster, toast } from 'react-hot-toast'
+
 import { navData } from "../data";
 import { useLocation } from 'react-router-dom'
 const Header = () => {
     const { pathname } = useLocation()
     // console.log(pathname);
-    const { currUser, SigninWithGoogle, logOut } = UserAuth()
+
     const [open, setOpen] = useState(false)
     const openDrawer = () => {
         setOpen(!open)
@@ -24,54 +22,25 @@ const Header = () => {
     const closeDrawer = () => {
         setOpen(false)
     }
-    const handleLogin = async () => {
-        try {
-            await SigninWithGoogle()
-            toast.success("Thanks For logging in", {
-                duration: 6000,
-                position: "top-center"
-            })
-        } catch (error) {
-            console.log(error);
-            toast.error("Couldn't login", {
-                duration: 6000,
-                position: "top-center"
-            })
-        }
 
-    }
-    const handleLogout = async () => {
-        await logOut()
-        toast.success("You Are Logged Out please Login Again!!", {
-            duration: 6000,
-            position: "top-center"
-        })
-    }
+
 
 
     return (
-        <div className="z-[31] ">
+
+        <div className="z-[35]">
             <header className="flex items-center justify-around  text-2xl  text-primary h-[90px] md:max-w-screen-xl mx-auto">
                 <div className="flex flex-row items-center justify-center">
                     <h1 className="text-2xl font-semibold">AASIF ALI</h1>
                 </div>
-                <div className="hidden  md:flex items-center justify-between gap-[20px] cursor-pointer text-xl ">
+                <div className="hidden  md:flex items-center justify-between gap-8 cursor-pointer text-xl ">
                     {
                         navData.map((item, id) => {
                             return (
-                                <a key={id} href={item.href} className={`${item?.href === pathname ? "border border-blue-500 p-3 rounded-full bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10" : ""}`}><p >{item?.title}</p></a>
+                                <a key={id} href={item.href} className={`${item?.href === pathname ? "border border-b-blue-500 border-t-0 text-red-600 border-l-0 border-r-0 p-3 rounded-full  bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 transition-all duration-300 delay-75 ease-in-out" : ""}`}><p >{item?.title}</p></a>
                             )
                         })
                     }
-                    <div className="mt-2 flex items-center gap-2 justify-center">
-                        {
-                            currUser ? <div className="flex flex-row items-center gap-2">
-                                <p>{currUser?.displayName}</p>
-                                <Button onClick={handleLogout} color="blue">Logout</Button>
-                            </div> : <Button onClick={handleLogin} color="green">Login</Button>
-                        }
-                        <Toaster />
-                    </div>
 
                 </div>
                 <div className="md:hidden ">
@@ -91,15 +60,6 @@ const Header = () => {
                                 )
                             })
                         }
-                    </div>
-                    <div className="mt-8 px-4 flex items-center justify-center gap-2">
-                        {
-                            currUser ? <div className="flex flex-row items-center gap-2">
-                                <p>{currUser?.displayName}</p>
-                                <Button onClick={handleLogout} color="blue">Logout</Button>
-                            </div> : <Button onClick={handleLogin} color="green">Login</Button>
-                        }
-                        <Toaster />
                     </div>
                     <div className=" mt-2 flex flex-row items-center gap-[15px] justify-center md:justify-start md:ml-4 py-4">
                         <a href="https://github.com/Asif45uaha" className='bg-black p-3 rounded-full'><GitHubIcon size={30} color='black' /></a>

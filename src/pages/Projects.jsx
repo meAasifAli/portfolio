@@ -4,7 +4,6 @@ import LanguageIcon from '@mui/icons-material/Language';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { Carousel, Typography } from "@material-tailwind/react";
 import { useState } from "react";
-import Divider from "./Divider";
 
 
 const Projects = () => {
@@ -27,8 +26,8 @@ const Projects = () => {
     }
 
     return (
-        <div id="projects" className="z-[30] bg-gradient-to-tr pb-4   mx-auto md:w-full">
-            <h2 className="text-primary-900 font-bold py-4 text-center text-3xl animate-wiggle animate-infinite animate-duration-[3000ms] animate-ease-in-out animate-alternate-reverse animate-fill-backwards">My Work</h2>
+        <div id="projects" className="z-[30] h-screen overflow-auto pb-4   mx-auto space-y-4 sm:space-y-8">
+            <h2 className="text-primary-900  py-4 text-center text-5xl font-bold">My Work</h2>
 
             <div className="transition-all duration-200 delay-100 ease-in-out md:max-w-screen-lg mx-auto py-4 flex flex-col items-center justify-center ">
                 <Typography data-aos="fade-right"
@@ -51,12 +50,11 @@ const Projects = () => {
 
             </div>
             <div className="flex flex-row  items-center justify-center pb-4 gap-2">
-                <Typography variant="h4">Sort By : </Typography>
-                <select onChange={handleFilter} className="bg-black py-3  outline-none rounded-xl font-normal">
-                    <option value="" className="font-normal">Select Category</option>
-                    <option value="all" className="font-normal">All</option>
-                    <option value="frontend" className="font-normal">Frontend</option>
-                    <option value="fullstack" className="font-normal">FullStack</option>
+                <label htmlFor="select" className="font-bold">Select a Category</label>
+                <select id="select" onChange={handleFilter} className="bg-blue-700 px-3 py-3  outline-none rounded-xl font-normal">
+                    <option value="all" className="font-normal p-2">All</option>
+                    <option value="frontend" className="font-normal p-2">Frontend</option>
+                    <option value="fullstack" className="font-normal p-2">FullStack</option>
                 </select>
             </div>
             <div className="transition duration-300 delay-75 ease-in-out flex flex-col md:flex-row md:flex-wrap  gap-4 md:gap-8 md:max-w-screen-lg mx-auto">

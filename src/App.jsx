@@ -1,14 +1,14 @@
 
 import { Routes, Route } from 'react-router-dom'
-import About from "./components/About"
-import Contact from "./components/Contact"
-import Experience from "./components/Experience"
+import About from "./pages/About"
+import Contact from "./pages/Contact"
+import Experience from "./pages/Experience"
 import Footer from "./components/Footer"
-import Home from "./components/Home"
+import Home from "./pages/Home"
 import Map from "./components/Map"
 import Navbar from "./components/Navbar"
-import Projects from "./components/Projects"
-import Services from "./components/Services"
+import Projects from "./pages/Projects"
+import Services from "./pages/Services"
 
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
 
 
   return (
-    <div className="md:max-w-screen-xl w-full mx-auto">
+    <div className="w-full">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />

@@ -3,7 +3,7 @@ const Contact = () => {
 
     return (
         <div id="contact" className="z-[30] bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-0 ">
-            <h2 className="text-primary-900 font-bold py-4 text-center text-3xl animate-wiggle animate-infinite animate-duration-[3000ms] animate-ease-in-out animate-alternate-reverse animate-fill-backwards">Connect With Me</h2>
+            <h2 className="text-primary-900  py-4 text-center text-5xl font-bold">Connect with me</h2>
             <div className=' w-full flex justify-center h-[99vh] p-4  mx-auto'>
                 <form className='flex flex-col justify-center gap-4 md:gap-6 items-start md:w-[50%] mx-auto' action="https://getform.io/f/38778926-87ed-4562-9b03-a2309121f440" method='POST'>
                     <p className='text-gray-500'>Nice To Meet You!</p>

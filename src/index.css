@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,600;0,5..1200,700;1,5..1200,500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Madimi+One&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,7 +13,7 @@ body {
   box-sizing: border-box;
 }
 a {
-  font-family: "Playfair", serif;
+  font-family: "Madimi One", sans-serif;
 }
 
 p,
@@ -25,9 +25,13 @@ h4,
 h5,
 h6,
 span {
-  font-family: "Poppins", sans-serif;
+  font-family: "Kode Mono", monospace;
 }
 
 ::-webkit-scrollbar {
   display: none;
+}
+
+#select {
+  -webkit-appearance: none;
 }
