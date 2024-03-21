@@ -5,8 +5,10 @@ import service from './assets/service2.png'
 import project from './assets/project1.png'
 import contact from './assets/contact2.webp'
 
-import chat1 from './assets/chat/chat1.png'
-import chat2 from './assets/chat/chat2.png'
+
+import mchat1 from './assets/mern_chat/chat1.png'
+import mchat2 from './assets/mern_chat/chat2.png'
+import mchat3 from './assets/mern_chat/chat3.png'
 import netflix1 from './assets/netflix/netflix1.png'
 import netflix2 from './assets/netflix/netflix2.png'
 import netflix3 from './assets/netflix/netflix3.png'
@@ -201,18 +203,7 @@ export const expData = [
 ]
 
 export const projectsData = [
-    {
-        id: 1,
-        title: "React Chat-App",
-        DeployURL: "https://chat-eta-sable.vercel.app",
-        GitURl: "https://github.com/Asif45uaha/Chat_app",
-        content: "A Basic Text Chatting Application developed Using Reactjs and daisyUI for Frontend as well as Firebase For Backend",
-        category: "fullstack",
-        carousel: [
-            chat1, chat2
-        ]
 
-    },
     {
         id: 2,
         title: "Netflix-UI Clone",
@@ -308,13 +299,24 @@ export const projectsData = [
     },
     {
         id: 10,
-        title: "MERN Ecommerce APP",
+        title: "Ecommerce APP",
         DeployURL: "https://mern-ecommerce-l443.onrender.com",
         GitURl: "https://github.com/Asif45uaha/mern_ecommerce.git",
         content: "Ecommerce Application Built Using Mern Stack Technologies,Users can add products to their cart/wishlist and can purchase them.This App has Test payment Integration as well.Users Can filter Different Products as well as can search Several Products in this App. Users can track their Orders as Well",
         category: "fullstack",
         carousel: [
             ecom1, ecom2, ecom3, ecom4
+        ]
+    },
+    {
+        id: 11,
+        title: "Full Stack Chatting web App",
+        DeployURL: "https://mern-ecommerce-l443.onrender.com",
+        GitURl: "https://github.com/Asif45uaha/mern_chat.git",
+        content: "Full Stack Chatting App Built using MERN stack,with real time mesaging features",
+        category: "fullstack",
+        carousel: [
+            mchat1, mchat2, mchat3
         ]
     }
 

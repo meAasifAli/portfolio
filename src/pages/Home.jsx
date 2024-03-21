@@ -6,7 +6,7 @@ import CallIcon from '@mui/icons-material/Call';
 
 const Home = () => {
     return (
-        <div id='home' className='z-[30] rounded-lg h-screen  flex justify-center flex-col'>
+        <div id='home' className='z-[30] rounded-lg h-screen overflow-auto  flex justify-center flex-col'>
             <div className="flex flex-col transition-all duration-600 delay-300 ease-soft-spring">
                 <div className=" px-4 gap-4 md:gap-8  md:max-w-screen-lg mx-auto flex flex-col md:flex-row-reverse
              md:justify-between items-center">

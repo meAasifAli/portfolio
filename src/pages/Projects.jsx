@@ -29,7 +29,7 @@ const Projects = () => {
         <div id="projects" className="z-[30] h-screen overflow-auto pb-4   mx-auto space-y-4 sm:space-y-8">
             <h2 className="text-primary-900  py-4 text-center text-5xl font-bold">My Work</h2>
 
-            <div className="transition-all duration-200 delay-100 ease-in-out md:max-w-screen-lg mx-auto py-4 flex flex-col items-center justify-center ">
+            <div className="transition-all duration-200 delay-100 ease-in-out  py-4 flex flex-col items-center justify-center ">
                 <Typography data-aos="fade-right"
                     data-aos-offset="300"
                     data-aos-easing="ease-in-sine" variant="h3" className="text-white text-center">
@@ -57,7 +57,7 @@ const Projects = () => {
                     <option value="fullstack" className="font-normal p-2">FullStack</option>
                 </select>
             </div>
-            <div className="transition duration-300 delay-75 ease-in-out flex flex-col md:flex-row md:flex-wrap  gap-4 md:gap-8 md:max-w-screen-lg mx-auto">
+            <div className="transition duration-300 delay-75 ease-in-out flex flex-col md:flex-row md:flex-wrap  gap-4 md:gap-8 sm:max-w-screen-xl mx-auto">
                 {
                     cards.map((item, index) => {
                         return (
