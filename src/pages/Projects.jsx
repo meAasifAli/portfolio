@@ -27,7 +27,7 @@ const Projects = () => {
 
     return (
         <div id="projects" className="z-[30] h-screen overflow-auto pb-4   mx-auto space-y-4 sm:space-y-8">
-            <h2 className="text-primary-900  py-4 text-center text-5xl font-bold">My Work</h2>
+            <h2 className="text-primary-900  py-4 text-center text-3xl sm:text-5xl font-bold">My Work</h2>
 
             <div className="transition-all duration-200 delay-100 ease-in-out  py-4 flex flex-col items-center justify-center ">
                 <Typography data-aos="fade-right"
@@ -61,7 +61,14 @@ const Projects = () => {
                 {
                     cards.map((item, index) => {
                         return (
-                            <Card className="py-4 w-[95%] md:h-[380px] mx-auto  shadow-md shadow-primary bg-clip-padding backdrop-filter backdrop-blur-3xl bg-opacity-20 via-transparent md:w-[30%]" key={index}>
+                            <Card data-aos="fade-up"
+                                data-aos-offset="200"
+                                data-aos-delay="50"
+                                data-aos-duration="1000"
+                                data-aos-easing="ease-in-out"
+                                data-aos-mirror="true"
+                                data-aos-once="false"
+                                data-aos-anchor-placement="top-center" className="py-4 w-[95%] md:h-[380px] mx-auto  shadow-md shadow-primary bg-clip-padding backdrop-filter backdrop-blur-3xl bg-opacity-20 via-transparent md:w-[30%]" key={index}>
                                 <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
                                     <p className="text-tiny uppercase font-bold">{item?.title}</p>
                                 </CardHeader>

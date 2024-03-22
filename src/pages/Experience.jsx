@@ -29,11 +29,25 @@ const Experience = () => {
     ];
     return (
         <div id="experience" className="z-[30] h-screen py-4 mt-4 md:mt-0  mx-auto md:w-full space-y-8 sm:space-y-24 overflow-auto">
-            <h2 className="text-primary-900  py-4 text-center text-5xl font-bold">Education & Experience</h2>
+            <h2 className="text-primary-900  py-4 text-center text-3xl sm:text-5xl font-bold">Education & Experience</h2>
             <div className="grid grid-cols-1  sm:w-[80%] mx-auto gap-2 sm:gap-16">
                 <div className="flex flex-col gap-4 px-2 sm:px-0">
-                    <h2 className="text-xl font-bold text-center">My Education</h2>
-                    <Timeline className="sm:w-2/3 w-full mx-auto">
+                    <h2 data-aos="fade-right"
+                        data-aos-offset="200"
+                        data-aos-delay="50"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in-out"
+                        data-aos-mirror="true"
+                        data-aos-once="false"
+                        data-aos-anchor-placement="top-center" className="text-xl font-bold text-center">My Education</h2>
+                    <Timeline data-aos="fade-up"
+                        data-aos-offset="200"
+                        data-aos-delay="50"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in-out"
+                        data-aos-mirror="true"
+                        data-aos-once="false"
+                        data-aos-anchor-placement="top-center" className="sm:w-2/3 w-full mx-auto">
                         {
                             eduData.map((item, id) => {
                                 return <TimelineItem key={id} >
@@ -56,7 +70,14 @@ const Experience = () => {
                 </div>
                 <div className="space-y-4">
                     <h2 className="text-xl font-bold text-center">My Expertise</h2>
-                    <div className="flex flex-row flex-wrap items-start justify-center gap-4">
+                    <div data-aos="fade-right"
+                        data-aos-offset="200"
+                        data-aos-delay="50"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in-out"
+                        data-aos-mirror="true"
+                        data-aos-once="false"
+                        data-aos-anchor-placement="top-center" className="flex flex-row flex-wrap items-start justify-center gap-4">
                         {
                             expData.map((item, id) => {
                                 return <div key={id} className="relative rounded-full shadow-md shadow-blue-600 p-1 sm:p-4 hover:scale-105 hover:transition-all duration-300 delay-75 ease-in-out hover:rotate-6 ">

@@ -12,6 +12,7 @@ import {
 import { navData } from "../data";
 import { useLocation } from 'react-router-dom'
 const Header = () => {
+    const headerText = "<p>Aasif</p>"
     const { pathname } = useLocation()
     // console.log(pathname);
 
@@ -24,14 +25,12 @@ const Header = () => {
     }
 
 
-
-
     return (
 
         <div className="z-[35]">
             <header className="flex items-center justify-around  text-2xl  text-primary h-[90px] md:max-w-screen-xl mx-auto">
                 <div className="flex flex-row items-center justify-center">
-                    <h1 className="text-2xl font-semibold">AASIF ALI</h1>
+                    <h1 className="text-2xl font-bold">{headerText}</h1>
                 </div>
                 <div className="hidden  md:flex items-center justify-between gap-8 cursor-pointer text-xl ">
                     {

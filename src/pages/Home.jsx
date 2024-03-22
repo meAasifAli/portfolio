@@ -7,10 +7,17 @@ import CallIcon from '@mui/icons-material/Call';
 const Home = () => {
     return (
         <div id='home' className='z-[30] rounded-lg h-screen overflow-auto  flex justify-center flex-col'>
-            <div className="flex flex-col transition-all duration-600 delay-300 ease-soft-spring">
+            <div className="flex flex-col h-screen justify-center transition-all duration-600 delay-300 ease-soft-spring">
                 <div className=" px-4 gap-4 md:gap-8  md:max-w-screen-lg mx-auto flex flex-col md:flex-row-reverse
              md:justify-between items-center">
-                    <div>
+                    <div data-aos="fade-down"
+                        data-aos-offset="200"
+                        data-aos-delay="50"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in-out"
+                        data-aos-mirror="true"
+                        data-aos-once="false"
+                        data-aos-anchor-placement="top-center">
                         <img src={bg} alt="error" className='rounded-full h-[300px] w-[300px] md:h-[400px] md:w-[400px]' />
                     </div>
                     <div className='flex flex-col gap-2 md:gap-4 transition 0.3s ease-in-out md:w-1/2'>
@@ -31,7 +38,7 @@ const Home = () => {
                             data-aos-easing="ease-in-out"
                             data-aos-mirror="true"
                             data-aos-once="false"
-                            data-aos-anchor-placement="top-center" className='text-6xl font-bold animate-pulse animate-infinite animate-duration-[6000ms] animate-ease-out'>
+                            data-aos-anchor-placement="top-center" className='text-6xl font-bold'>
                             Aasif <span className='text-primary'>Ali</span>
                         </h1>
                         <p data-aos="fade-up"
