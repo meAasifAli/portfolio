@@ -30,20 +30,14 @@ const Projects = () => {
             <h2 className="text-primary-900  py-4 text-center text-3xl sm:text-5xl font-bold">My Work</h2>
 
             <div className="transition-all duration-200 delay-100 ease-in-out  py-4 flex flex-col items-center justify-center ">
-                <Typography data-aos="fade-right"
-                    data-aos-offset="300"
-                    data-aos-easing="ease-in-sine" variant="h3" className="text-white text-center">
+                <Typography variant="h3" className="text-white text-center">
                     Total <span className="text-3xl text-primary">{projectsData.length}</span> projects
                 </Typography>
                 <div className="flex flex-col md:flex-row items-center  gap-2 md:gap-8">
-                    <Typography data-aos="fade-right"
-                        data-aos-offset="300"
-                        data-aos-easing="ease-in-sine" variant="h3" className="text-white">
+                    <Typography variant="h3" className="text-white">
                         Frontend <span className="text-3xl text-primary">{frontendProjects()}</span>
                     </Typography>
-                    <Typography data-aos="fade-right"
-                        data-aos-offset="300"
-                        data-aos-easing="ease-in-sine" variant="h3" className="text-white">
+                    <Typography variant="h3" className="text-white">
                         FullStack <span className="text-3xl text-primary ">{fulltackProjects()}</span>
                     </Typography>
                 </div>
@@ -61,14 +55,7 @@ const Projects = () => {
                 {
                     cards.map((item, index) => {
                         return (
-                            <Card data-aos="fade-up"
-                                data-aos-offset="200"
-                                data-aos-delay="50"
-                                data-aos-duration="1000"
-                                data-aos-easing="ease-in-out"
-                                data-aos-mirror="true"
-                                data-aos-once="false"
-                                data-aos-anchor-placement="top-center" className="py-4 w-[95%] md:h-[380px] mx-auto  shadow-md shadow-primary bg-clip-padding backdrop-filter backdrop-blur-3xl bg-opacity-20 via-transparent md:w-[30%]" key={index}>
+                            <Card className="py-4 w-[95%] md:h-[380px] mx-auto  shadow-md shadow-primary bg-clip-padding backdrop-filter backdrop-blur-3xl bg-opacity-20 via-transparent md:w-[30%]" key={index}>
                                 <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
                                     <p className="text-tiny uppercase font-bold">{item?.title}</p>
                                 </CardHeader>
