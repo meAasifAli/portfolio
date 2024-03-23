@@ -6,11 +6,11 @@ import CallIcon from '@mui/icons-material/Call';
 const About = () => {
 
     return (
-        <div id="about" className="z-[30] overflow-auto h-screen mt-4 md:mt-0 w-full mx-auto space-y-4 sm:space-y-24 px-4 sm:px-8">
+        <div id="about" className="z-[30] overflow-auto h-screen  mt-4 md:mt-0 w-full mx-auto space-y-4 sm:space-y-24 px-4 sm:px-8">
             <h2 className="text-primary-900  py-4 text-center text-3xl sm:text-5xl font-bold">About Me</h2>
             <div className="flex flex-col   sm:w-[80%] mx-auto sm:flex-row  justify-center gap-8 sm:gap-24 py-4 transition-all duration-200 delay-100 ease-in-out">
                 <div
-                    className='sm:p-4 shadow-md shadow-white rounded-lg'>
+                    className='hidden sm:inline-flex sm:p-4 shadow-md shadow-white rounded-lg'>
                     <img src={pic} height={800} width={800} alt="err" />
                 </div>
                 <div className="flex flex-col gap-6">

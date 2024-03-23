@@ -10,10 +10,10 @@ import {
 } from "@material-tailwind/react";
 
 import { navData } from "../data";
-import { useLocation } from 'react-router-dom'
+
 const Header = () => {
     const headerText = "<p>Aasif</p>"
-    const { pathname } = useLocation()
+
     // console.log(pathname);
 
     const [open, setOpen] = useState(false)
@@ -27,16 +27,16 @@ const Header = () => {
 
     return (
 
-        <div className="z-[35]">
-            <header className="flex items-center justify-around  text-2xl  text-primary h-[90px] md:max-w-screen-xl mx-auto">
+        <div className="z-[35] bg-blue-800">
+            <header className="flex items-center justify-around  text-2xl  text-white h-[90px] md:max-w-screen-xl mx-auto">
                 <div className="flex flex-row items-center justify-center">
                     <h1 className="text-2xl font-bold">{headerText}</h1>
                 </div>
-                <div className="hidden  md:flex items-center justify-between gap-8 cursor-pointer text-xl ">
+                <div className="hidden  md:flex items-center justify-between gap-4 cursor-pointer text-xl ">
                     {
                         navData.map((item, id) => {
                             return (
-                                <a key={id} href={item.href} className={`${item?.href === pathname ? "border border-b-blue-500 border-t-0 text-red-600 border-l-0 border-r-0 p-3 rounded-full  bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 transition-all duration-300 delay-75 ease-in-out" : ""}`}><p >{item?.title}</p></a>
+                                <a key={id} href={item.href} className=" p-3 rounded-full  bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 transition-all duration-300 delay-75 ease-in-out"><p >{item?.title}</p></a>
                             )
                         })
                     }
@@ -55,7 +55,7 @@ const Header = () => {
                         {
                             navData.map((item, id) => {
                                 return (
-                                    <a key={id} href={item.href} className={`${item?.href === pathname ? "border border-blue-500 p-2 rounded-full bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10" : ""}`}><p >{item?.title}</p></a>
+                                    <a key={id} href={item.href} className="border border-b-blue-500 border-t-0 text-red-600 border-l-0 border-r-0 p-3 rounded-full  bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 transition-all duration-300 delay-75 ease-in-out"><p >{item?.title}</p></a>
                                 )
                             })
                         }

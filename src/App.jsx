@@ -1,32 +1,29 @@
 
-import { Routes, Route } from 'react-router-dom'
-import About from "./pages/About"
-import Contact from "./pages/Contact"
-import Experience from "./pages/Experience"
+import About from "./sections/About"
+import Contact from "./sections/Contact"
+import Experience from "./sections/Experience"
 import Footer from "./components/Footer"
-import Home from "./pages/Home"
+import Home from "./sections/Home"
 import Map from "./components/Map"
 import Navbar from "./components/Navbar"
-import Projects from "./pages/Projects"
-import Services from "./pages/Services"
+import Projects from "./sections/Projects"
+import Services from "./sections/Services"
 
 
 function App() {
 
-
-
   return (
-    <div className="w-full">
+    <div className="space-y-0">
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/experience" element={<Experience />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/location" element={<Map />} />
-      </Routes>
+      <div className="w-full space-y-4 sm:space-y-16">
+        <Home />
+        <About />
+        <Experience />
+        <Services />
+        <Projects />
+        <Contact />
+        <Map />
+      </div>
       <Footer />
     </div>
   )
