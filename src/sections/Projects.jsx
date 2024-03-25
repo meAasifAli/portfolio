@@ -2,9 +2,9 @@ import { Card, CardHeader, CardBody, Image } from "@nextui-org/react";
 import { projectsData } from "../data";
 import LanguageIcon from '@mui/icons-material/Language';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import { Carousel, Typography } from "@material-tailwind/react";
+import { Typography } from "@material-tailwind/react";
 import { useState } from "react";
-
+import Divider from "../components/Divider";
 
 const Projects = () => {
     const [cards, setCards] = useState(projectsData);
@@ -26,9 +26,15 @@ const Projects = () => {
     }
 
     return (
-        <div id="projects" className="z-[30] h-screen overflow-auto pb-4   mx-auto space-y-4 sm:space-y-8">
-            <h2 className="text-primary-900  py-4 text-center text-3xl sm:text-5xl font-bold">My Work</h2>
+        <div id="projects" className="z-[30] pb-4   mx-auto space-y-4 sm:space-y-8">
+            <div className='flex justify-center items-center gap-2'>
 
+                <Divider />
+                <div>
+                    <h2 className="text-primary-900  py-4 text-center text-3xl sm:text-4xl font-bold">Portfolio</h2>
+                </div>
+                <Divider />
+            </div>
             <div className="transition-all duration-200 delay-100 ease-in-out  py-4 flex flex-col items-center justify-center ">
                 <Typography variant="h3" className="text-white text-center">
                     Total <span className="text-3xl text-primary">{projectsData.length}</span> projects
@@ -55,17 +61,14 @@ const Projects = () => {
                 {
                     cards.map((item, index) => {
                         return (
-                            <Card className="py-4 w-[95%] md:h-[380px] mx-auto  shadow-md shadow-primary bg-clip-padding backdrop-filter backdrop-blur-3xl bg-opacity-20 via-transparent md:w-[30%]" key={index}>
+                            <Card className="py-4 w-[95%] md:h-[380px] mx-auto  shadow-md shadow-primary bg-clip-padding backdrop-filter backdrop-blur-3xl bg-opacity-20 via-transparent sm:w-[30%]" key={index}>
                                 <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
                                     <p className="text-tiny uppercase font-bold">{item?.title}</p>
                                 </CardHeader>
                                 <CardBody className="overflow-visible py-2 flex flex-col justify-between">
-                                    <Carousel loop={true} autoplay={true} nextArrow={false} prevArrow={false} className="w-full md:w-[270px] mx-auto">{
-                                        item?.carousel?.map((item, index) =>
-                                            <Image key={index} src={item} />
-                                        )
-                                    }
-                                    </Carousel>
+
+                                    <Image src={item?.carousel[0]} />
+
                                     <Typography variant="paragraph" className="py-2 text-xs" >{item?.content}</Typography>
                                     <div className='flex flex-row items-center justify-center gap-10 mt-2'>
                                         <a href={item?.DeployURL} className='bg-primary p-3 rounded-full  '><LanguageIcon /></a>

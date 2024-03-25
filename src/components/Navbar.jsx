@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -13,7 +13,7 @@ import { navData } from "../data";
 
 const Header = () => {
     const headerText = "<p>Aasif</p>"
-
+    const [sticky, setSticky] = useState(false)
     // console.log(pathname);
 
     const [open, setOpen] = useState(false)
@@ -24,11 +24,22 @@ const Header = () => {
         setOpen(false)
     }
 
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 0) {
+                setSticky(true)
+            }
+            else {
+                setSticky(false)
+            }
+        }
+        window.addEventListener("scroll", handleScroll)
 
-    return (
+    }, [])
 
-        <div className="z-[35] bg-blue-800">
-            <header className="flex items-center justify-around  text-2xl  text-white h-[90px] md:max-w-screen-xl mx-auto">
+    return sticky ? (
+        <div className={`z-[35]  bg-white  sticky top-0`}>
+            <header className={`flex items-center justify-around  text-2xl  text-blue-700 h-[90px] md:max-w-screen-xl mx-auto`}>
                 <div className="flex flex-row items-center justify-center">
                     <h1 className="text-2xl font-bold">{headerText}</h1>
                 </div>
@@ -69,6 +80,6 @@ const Header = () => {
             </header>
 
         </div>
-    )
+    ) : ""
 }
 export default Header

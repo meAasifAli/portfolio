@@ -1,10 +1,17 @@
 import { serviceData } from "../data"
-
+import Divider from "../components/Divider"
 
 const Services = () => {
     return (
-        <div id="services" className="z-[30]  py-4 px-2 h-screen overflow-auto mt-4 md:mt-0 mx-auto md:w-full space-y-8 sm:space-y-24">
-            <h2 className="text-primary-900  py-4 text-center text-3xl sm:text-5xl font-bold">Services I Offer</h2>
+        <div id="services" className="z-[30]  py-4 px-2  mt-4 md:mt-0 mx-auto md:w-full space-y-8 sm:space-y-24">
+            <div className='flex justify-center items-center gap-2'>
+
+                <Divider />
+                <div>
+                    <h2 className="text-primary-900  py-4 text-center text-3xl sm:text-4xl font-bold">Services</h2>
+                </div>
+                <Divider />
+            </div>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-16 w-full sm:w-[80%] mx-auto px-2 sm:px-0">
                 {serviceData.map((service, index) => {
                     return <div key={index} className="flex flex-col gap-2 sm:gap-6 justify-start items-start shadow-md shadow-blue-300 p-2 sm:p-4 rounded-lg">
