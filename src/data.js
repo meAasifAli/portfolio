@@ -7,79 +7,55 @@ import contact from './assets/contact2.webp'
 
 
 import mchat1 from './assets/mern_chat/chat1.png'
-import mchat2 from './assets/mern_chat/chat2.png'
-import mchat3 from './assets/mern_chat/chat3.png'
 import netflix1 from './assets/netflix/netflix1.png'
-import netflix2 from './assets/netflix/netflix2.png'
-import netflix3 from './assets/netflix/netflix3.png'
-import netflix4 from './assets/netflix/netflix4.png'
 import shop1 from './assets/shop/shop1.png'
-import shop2 from './assets/shop/shop2.png'
-import shop3 from './assets/shop/shop3.png'
 import crypto1 from "./assets/crypto/crypto1.png"
-import crypto2 from "./assets/crypto/crypto2.png"
-import crypto3 from "./assets/crypto/crypto3.png"
-import crypto4 from "./assets/crypto/crypto4.png"
-import crypto5 from "./assets/crypto/crypto5.png"
 import pms1 from './assets/pms/pms1.png'
-import pms2 from './assets/pms/pms2.png'
 import crud1 from './assets/crud/crud1.png'
-import crud2 from './assets/crud/crud2.png'
-import crud3 from './assets/crud/crud3.png'
 import weather1 from './assets/weather/weather1.png'
-import weather2 from './assets/weather/weather2.png'
 import amazon1 from './assets/amazon/amazon1.png'
-import amazon2 from './assets/amazon/amazon2.png'
-import amazon3 from './assets/amazon/amazon3.png'
-import amazon4 from './assets/amazon/amazon4.png'
-import amazon5 from './assets/amazon/amazon5.png'
 import atm1 from './assets/atm/atm1.png'
-import atm2 from './assets/atm/atm2.png'
-import atm3 from './assets/atm/atm3.png'
-import atm4 from './assets/atm/atm4.png'
-import atm5 from './assets/atm/atm5.png'
 import ecom1 from './assets/ecom_assets/ecom1.png'
-import ecom2 from './assets/ecom_assets/ecom2.png'
-import ecom3 from './assets/ecom_assets/ecom3.png'
-import ecom4 from './assets/ecom_assets/ecom4.png'
+import todo from "./assets/todo.png"
+import social from './assets/social.png'
 
 export const navData = [
     {
         id: 1,
         img: home,
         title: "Home",
-        href: "/"
+        href: "#home"
     }
     ,
     {
         id: 2,
         img: about,
         title: "About",
-        href: "/about"
+        href: "#about"
     },
     {
         id: 3,
         img: exp,
         title: "Experience",
-        href: "/experience"
+        href: "#experience"
     },
     {
         id: 4,
         img: service,
         title: "Services",
-        href: "/services"
+        href: "#services"
     },
     {
         id: 5,
         img: project,
         title: "Projects",
-        href: "/projects"
+        href: "#projects"
     },
     {
         id: 6,
         img: contact,
         title: "Contact",
-        href: "/contact"
+        href: "#contact"
     }
 ]
 export const eduData = [{
@@ -211,9 +187,7 @@ export const projectsData = [
         GitURl: "https://github.com/Asif45uaha/netflix-app.git",
         content: "A Basic Netflix-UI clone developed Using Reactjs and TailwindCss for Frontend as well as Firebase For Backend",
         category: "fullstack",
-        carousel: [
-            netflix1, netflix2, netflix3, netflix4
-        ]
+        thumbnail: netflix1
     }
     ,
 
@@ -224,9 +198,7 @@ export const projectsData = [
         GitURl: "https://github.com/Asif45uaha/shopping-cart-client.git",
         content: "A Basic Full-Responsive Mini-Cart Application developed Using Reactjs,chakraUI for Frontend as well as Nodejs For Razorpay Payment Integration",
         category: "fullstack",
-        carousel: [
-            shop1, shop2, shop3
-        ]
+        thumbnail: shop1
     }
     ,
     {
@@ -237,9 +209,7 @@ export const projectsData = [
         GitURl: "https://github.com/Asif45uaha/Crypto_app.git",
         content: "A Basic Crypto Application developed Using Reactjs and chakraUI for its Development",
         category: "frontend",
-        carousel: [
-            crypto1, crypto2, crypto3, crypto4, crypto5
-        ]
+        thumbnail: crypto1
     },
     {
         id: 5,
@@ -248,9 +218,7 @@ export const projectsData = [
         GitURl: "https://github.com/Asif45uaha/Project-management-Tool.git",
         content: "A Basic Project mgmt System Application developed Using Reactjs and TailwindCss for Frontend as well as Firebase For Backend",
         category: "fullstack",
-        carousel: [
-            pms1, pms2
-        ]
+        thumbnail: pms1
     },
     {
         id: 6,
@@ -259,9 +227,7 @@ export const projectsData = [
         GitURl: "https://github.com/Asif45uaha/crud_client.git",
         content: "A basic CRUD Application developed Using Reactjs and TailwindCss for Frontend as well as Nodejs and MongoDb For Backend",
         category: "fullstack",
-        carousel: [
-            crud1, crud2, crud3
-        ]
+        thumbnail: crud1
     },
     {
         id: 7,
@@ -270,9 +236,7 @@ export const projectsData = [
         GitURl: "https://github.com/Asif45uaha/react-weather-app.git",
         content: "A basic Weather Application developed Using Reactjs and TailwindCss for Frontend as well as openWeather Api for pulling out the Realtime Weather Data",
         category: "frontend",
-        carousel: [
-            weather1, weather2
-        ]
+        thumbnail: weather1
     },
     {
         id: 8,
@@ -281,9 +245,7 @@ export const projectsData = [
         GitURl: "https://github.com/Asif45uaha/amazon_clone.git",
         content: "Amazon Clone developed Using Reactjs and TailwindCss for Frontend as well as Redux/toolkit for state Managament",
         category: "frontend",
-        carousel: [
-            amazon1, amazon2, amazon3, amazon4, amazon5
-        ]
+        thumbnail: amazon1
     },
     {
         id: 9,
@@ -292,9 +254,7 @@ export const projectsData = [
         GitURl: "https://github.com/Asif45uaha/ATM-Project.git",
         content: "ATM Clone Built using Html,Css and Js,Users can Credit,deposit the Amount,Make Hassle-Free balance Enquiries as well as can apply for instant Loan",
         category: "frontend",
-        carousel: [
-            atm1, atm2, atm3, atm4, atm5
-        ]
+        thumbnail: atm1
 
     },
     {
@@ -304,9 +264,7 @@ export const projectsData = [
         GitURl: "https://github.com/Asif45uaha/mern_ecommerce.git",
         content: "Ecommerce Application Built Using Mern Stack Technologies,Users can add products to their cart/wishlist and can purchase them.This App has Test payment Integration as well.Users Can filter Different Products as well as can search Several Products in this App. Users can track their Orders as Well",
         category: "fullstack",
-        carousel: [
-            ecom1, ecom2, ecom3, ecom4
-        ]
+        thumbnail: ecom1
     },
     {
         id: 11,
@@ -315,9 +273,25 @@ export const projectsData = [
         GitURl: "https://github.com/Asif45uaha/mern_chat.git",
         content: "Full Stack Chatting App Built using MERN stack,with real time mesaging features",
         category: "fullstack",
-        carousel: [
-            mchat1, mchat2, mchat3
-        ]
+        thumbnail: mchat1
+    },
+    {
+        id: 12,
+        title: "Full Stack Todo App",
+        DeployURL: "https://full-stack-todo-app-azure.vercel.app",
+        GitURl: "https://github.com/Asif45uaha/Full_stack_Todo_App.git",
+        content: "Full Todo App Built using React with Typescript and Firebase,Users can add Todos,modify the status of the todos,Users can edit as well as delete todos",
+        category: "fullstack",
+        thumbnail: todo
+    },
+    {
+        id: 12,
+        title: "Full Stack Social Media App",
+        DeployURL: "https://next-14-social.vercel.app/profile/Aasif",
+        GitURl: "https://github.com/Asif45uaha/NEXT_14_SOCIAL.git",
+        content: "Full Social Media App Built using Next.js 14 ,Mongodb  and ChakraUI,Users can follow or unfollow other users, Users can add their post to their timeline, Users can edit as well  as delete their own posts and much more",
+        category: "fullstack",
+        thumbnail: social
     }
 
 ]

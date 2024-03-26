@@ -1,15 +1,15 @@
-// import { Card, CardBody, CardHeader } from "@nextui-org/react";
+
 import Divider from '../components/Divider';
 import pic from '../assets/asif2.jpg'
-import CallIcon from '@mui/icons-material/Call';
-
+import GitHubIcon from '@mui/icons-material/GitHub';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 const About = () => {
 
     return (
         <div id="about" className="z-[30] overflow-auto   mt-4 md:mt-0 w-full mx-auto space-y-4 sm:space-y-24 px-4 sm:px-8">
             <div className='flex justify-center items-center gap-2'>
-
                 <Divider />
                 <div>
                     <h2 className="text-primary-900  py-4 text-center text-3xl sm:text-4xl font-bold">About Me</h2>
@@ -40,13 +40,10 @@ const About = () => {
                             <h4>Email : asif15310@gmail.com</h4>
                         </div>
                     </div>
-                    <div className='transition-all duration-200 delay-150 ease-in-out flex flex-row  justify-between md:justify-normal sm:gap-8 px-1 py-4 md:py-8  mt-2 '>
-                        <a href='/contact' className='bg-gradient-to-r from-primary-300 via-dark/70 to-green-700  hover:from-pink-500 hover:to-yellow-500 p-4  rounded-md hover:bg-primary hover:transition duration-300 delay-100 ease-in-out'>
-                            <CallIcon />Hire Me
-                        </a>
-                        <a href="" className='bg-gradient-to-r from-primary-300 via-dark/70 to-green-700  hover:from-pink-500 hover:to-yellow-500  p-4  rounded-md hover:bg-primary hover:transition duration-300 delay-100 ease-in-out'>
-                            Know More
-                        </a>
+                    <div className="flex  flex-row items-center gap-6 ">
+                        <a href="https://github.com/Asif45uaha" className='bg-blue-800 p-4 rounded-full hover:opacity-80 hover:scale-105 transition-all delay-75 duration-200 ease-in-out'><GitHubIcon size={30} color='black' /></a>
+                        <a href="https://www.instagram.com/_asif_ali10" className='bg-blue-800  p-4 rounded-full hover:opacity-80 hover:scale-105 transition-all delay-75 duration-200 ease-in-out'><InstagramIcon color='black' size={30} /></a>
+                        <a href="https://www.linkedin.com/in/aasif-ali-6909b8200" className='bg-blue-800  p-4 rounded-full hover:opacity-80 hover:scale-105 transition-all delay-75 duration-200 ease-in-out'><LinkedInIcon color='black' size={30} /></a>
                     </div>
                 </div>
             </div>

@@ -39,7 +39,7 @@ const Header = () => {
 
     return sticky ? (
         <div className={`z-[35]  bg-white  sticky top-0`}>
-            <header className={`flex items-center justify-around  text-2xl  text-blue-700 h-[90px] md:max-w-screen-xl mx-auto`}>
+            <header className={`flex items-center justify-around  text-2xl transition-all delay-100 duration-300 ease-in-out  text-blue-700 h-[90px] md:max-w-screen-xl mx-auto`}>
                 <div className="flex flex-row items-center justify-center">
                     <h1 className="text-2xl font-bold">{headerText}</h1>
                 </div>
@@ -53,7 +53,7 @@ const Header = () => {
                     }
 
                 </div>
-                <div className="md:hidden ">
+                <div className="sm:hidden ">
                     <MenuIcon className="md:hidden" onClick={openDrawer} />
                 </div>
                 <Drawer open={open} onClose={closeDrawer} placement="left" className="bg-black md:hidden  flex flex-col justify-around">
@@ -66,7 +66,7 @@ const Header = () => {
                         {
                             navData.map((item, id) => {
                                 return (
-                                    <a key={id} href={item.href} className="border border-b-blue-500 border-t-0 text-red-600 border-l-0 border-r-0 p-3 rounded-full  bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 transition-all duration-300 delay-75 ease-in-out"><p >{item?.title}</p></a>
+                                    <a key={id} href={item.href} className="p-3 rounded-full  bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 transition-all duration-300 delay-75 ease-in-out"><p >{item?.title}</p></a>
                                 )
                             })
                         }

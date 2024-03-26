@@ -40,9 +40,9 @@ const Experience = () => {
                 <Divider />
             </div>
             <div className="grid grid-cols-1  sm:w-[80%] mx-auto gap-8 sm:gap-16">
-                <div className="flex flex-col gap-4 px-2 sm:px-0">
+                <div className="flex  flex-col gap-4 px-2 sm:px-0">
                     <h2 className="text-xl font-bold text-center">My Education</h2>
-                    <Timeline className="sm:w-2/3  w-full mx-auto">
+                    <Timeline className=" w-full mx-auto">
                         {
                             eduData.map((item, id) => {
                                 return <TimelineItem

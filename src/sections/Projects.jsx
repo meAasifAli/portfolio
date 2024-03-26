@@ -16,39 +16,18 @@ const Projects = () => {
             setCards(filteredCards);
         }
     };
-    const frontendProjects = () => {
-        const projects = projectsData.filter((project) => project.category === "frontend")
-        return projects.length;
-    }
-    const fulltackProjects = () => {
-        const projects = projectsData.filter((project) => project.category === "fullstack")
-        return projects.length;
-    }
+
 
     return (
         <div id="projects" className="z-[30] pb-4   mx-auto space-y-4 sm:space-y-8">
             <div className='flex justify-center items-center gap-2'>
-
                 <Divider />
                 <div>
                     <h2 className="text-primary-900  py-4 text-center text-3xl sm:text-4xl font-bold">Portfolio</h2>
                 </div>
                 <Divider />
             </div>
-            <div className="transition-all duration-200 delay-100 ease-in-out  py-4 flex flex-col items-center justify-center ">
-                <Typography variant="h3" className="text-white text-center">
-                    Total <span className="text-3xl text-primary">{projectsData.length}</span> projects
-                </Typography>
-                <div className="flex flex-col md:flex-row items-center  gap-2 md:gap-8">
-                    <Typography variant="h3" className="text-white">
-                        Frontend <span className="text-3xl text-primary">{frontendProjects()}</span>
-                    </Typography>
-                    <Typography variant="h3" className="text-white">
-                        FullStack <span className="text-3xl text-primary ">{fulltackProjects()}</span>
-                    </Typography>
-                </div>
 
-            </div>
             <div className="flex flex-row  items-center justify-center pb-4 gap-2">
                 <label htmlFor="select" className="font-bold">Select a Category</label>
                 <select id="select" onChange={handleFilter} className="bg-blue-700 px-3 py-3  outline-none rounded-xl font-normal">
@@ -67,7 +46,7 @@ const Projects = () => {
                                 </CardHeader>
                                 <CardBody className="overflow-visible py-2 flex flex-col justify-between">
 
-                                    <Image src={item?.carousel[0]} />
+                                    <Image src={item?.thumbnail} />
 
                                     <Typography variant="paragraph" className="py-2 text-xs" >{item?.content}</Typography>
                                     <div className='flex flex-row items-center justify-center gap-10 mt-2'>
