@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="space-y-0">
       <Navbar />
-      <div className="w-full space-y-4 sm:space-y-16">
+      <div className="w-full space-y-4 sm:space-y-16 z-[40]">
         <Home />
         <About />
         <Experience />
