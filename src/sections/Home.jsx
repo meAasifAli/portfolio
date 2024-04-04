@@ -3,10 +3,11 @@ import resume from '../assets/resume.pdf'
 import DownloadIcon from '@mui/icons-material/Download';
 import CallIcon from '@mui/icons-material/Call';
 import { useStickyContext } from '../context/StickyProvider'
-import { MdOutlineKeyboardDoubleArrowDown } from "react-icons/md";
+import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
 
 const Home = () => {
     const { showArrow } = useStickyContext()
+
     return (
         <div id='home' className='z-[30] h-screen bg-[#0BCEAF]  overflow-auto   flex justify-center flex-col'>
             <div className="flex flex-col h-screen justify-center transition-all duration-600 delay-300 ease-soft-spring">
@@ -40,7 +41,7 @@ const Home = () => {
             <div className='flex justify-center items-center pb-4 animate-fade-down animate-infinite animate-duration-[3000ms] animate-ease-out'>
                 {
                     showArrow &&
-                    <MdOutlineKeyboardDoubleArrowDown color='white' size={'50'} />
+                    <KeyboardDoubleArrowDownIcon color='white' sx={{ fontSize: 40 }} />
                 }
             </div>
         </div>

@@ -4,7 +4,7 @@ import Contact from "./sections/Contact"
 import Experience from "./sections/Experience"
 import Footer from "./components/Footer"
 import Home from "./sections/Home"
-import Navbar from "./components/Navbar"
+import Navbar from "./components/navigation/Navbar"
 import Projects from "./sections/Projects"
 import Services from "./sections/Services"
 
@@ -24,6 +24,7 @@ function App() {
       </div>
       <Footer />
     </div>
+
   )
 }
 

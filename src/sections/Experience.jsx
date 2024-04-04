@@ -70,9 +70,8 @@ const Experience = () => {
                     <div className="flex flex-row flex-wrap items-start justify-center gap-4">
                         {
                             expData.map((item, id) => {
-                                return <div key={id} className="relative rounded-full shadow-md shadow-blue-600 p-1 sm:p-4 hover:scale-105 hover:transition-all duration-300 delay-75 ease-in-out hover:rotate-6 ">
+                                return <div key={id} className=" rounded-full shadow-md shadow-[#0BCEAF] p-1 sm:p-4 hover:scale-105 hover:transition-all duration-300 delay-75 ease-in-out hover:rotate-6 ">
                                     <img src={item?.src} alt="err" className="sm:h-48 sm:w-48 h-24 w-24 object-contain" />
-                                    <p className="absolute -top-2 left-4 sm:left-16 bg-blue-500 px-4 py-2 rounded-lg">{item?.progressVal} %</p>
                                 </div>
                             })
                         }

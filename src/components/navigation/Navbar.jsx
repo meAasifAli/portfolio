@@ -9,8 +9,8 @@ import {
     IconButton
 } from "@material-tailwind/react";
 
-import { navData } from "../data";
-import { useStickyContext } from "../context/StickyProvider";
+import { navData } from "../../data";
+import { useStickyContext } from "../../context/StickyProvider";
 import { classnames } from "./nav";
 
 const Header = () => {

@@ -1,19 +1,21 @@
 import { Card, CardHeader, CardBody, Image } from "@nextui-org/react";
 import { projectsData } from "../data";
-import LanguageIcon from '@mui/icons-material/Language';
-import GitHubIcon from '@mui/icons-material/GitHub';
 import { Typography } from "@material-tailwind/react";
 import { useState } from "react";
 import Divider from "../components/Divider";
 
 const Projects = () => {
     const [cards, setCards] = useState(projectsData);
-    const handleFilter = (ev) => {
-        if (ev.target.value === "all") {
+    const [activeColorText, setActiveColorText] = useState("all")
+
+    const handleFilter = (val) => {
+        if (val === "all") {
             setCards(projectsData);
+            setActiveColorText("all")
         } else {
-            const filteredCards = projectsData.filter((card) => card.category === ev.target.value);
+            const filteredCards = projectsData.filter((card) => card.category === val);
             setCards(filteredCards);
+            setActiveColorText(val)
         }
     };
 
@@ -28,31 +30,33 @@ const Projects = () => {
                 <Divider />
             </div>
 
-            <div className="flex flex-row  items-center justify-center pb-4 gap-2">
-                <label htmlFor="select" className="font-bold">Select a Category</label>
-                <select id="select" onChange={handleFilter} className="bg-blue-700 px-3 py-3  outline-none rounded-xl font-normal">
-                    <option value="all" className="font-normal p-2">All</option>
-                    <option value="frontend" className="font-normal p-2">Frontend</option>
-                    <option value="fullstack" className="font-normal p-2">FullStack</option>
-                </select>
+            <div className="flex flex-row  items-center justify-center pb-4 gap-6">
+                <button onClick={() => handleFilter("all")} className={`${activeColorText === "all" ? "bg-[#0bceaf]" : ""} border-2 border-[#0bceaf] rounded-full p-3  hover:bg-[#0bceaf]  transition-all delay-150 duration-400 ease-in-out`}>
+                    All
+                </button>
+                <button onClick={() => handleFilter("frontend")} className={`${activeColorText === "frontend" ? "bg-[#0bceaf]" : ""} border-2 border-[#0bceaf] rounded-full p-3  hover:bg-[#0bceaf]   transition-all delay-150 duration-400 ease-in-out`}>
+                    Frontend
+                </button>
+                <button onClick={() => handleFilter("fullstack")} className={`${activeColorText === "fullstack" ? "bg-[#0bceaf]" : ""} border-2 border-[#0bceaf] rounded-full p-3  hover:bg-[#0bceaf]   transition-all delay-150 duration-400 ease-in-out`}>
+                    Full Stack
+                </button>
             </div>
             <div className="transition duration-300 delay-75 ease-in-out flex flex-col md:flex-row md:flex-wrap  gap-4 md:gap-8 sm:max-w-screen-xl mx-auto">
                 {
                     cards.map((item, index) => {
                         return (
-                            <Card className="py-4 w-[95%] md:h-[380px] mx-auto  shadow-md shadow-primary bg-clip-padding backdrop-filter backdrop-blur-3xl bg-opacity-20 via-transparent sm:w-[30%]" key={index}>
+                            <Card className="py-6 w-[95%] sm:h-[350px] mx-auto  shadow-md shadow-[#0bceaf] bg-clip-padding backdrop-filter backdrop-blur-3xl bg-opacity-20 via-transparent sm:w-[30%]" key={index}>
                                 <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
                                     <p className="text-tiny uppercase font-bold">{item?.title}</p>
                                 </CardHeader>
-                                <CardBody className="overflow-visible py-2 flex flex-col justify-between">
-
+                                <CardBody className="overflow-visible py-4 flex flex-col justify-between">
                                     <Image src={item?.thumbnail} />
-
-                                    <Typography variant="paragraph" className="py-2 text-xs" >{item?.content}</Typography>
-                                    <div className='flex flex-row items-center justify-center gap-10 mt-2'>
-                                        <a href={item?.DeployURL} className='bg-primary p-3 rounded-full  '><LanguageIcon /></a>
-                                        <a href={item?.GitURl} className='bg-primary p-3 rounded-full '><GitHubIcon /></a>
-                                    </div>
+                                    <Typography variant="paragraph" className="py-2 text-xs" >{item?.content?.slice(0, 100)}..</Typography>
+                                    <button className="w-full py-4">
+                                        <a href={item?.GitURl} className='bg-[#0bceaf] p-3 w-full '>
+                                            know more
+                                        </a>
+                                    </button>
                                 </CardBody>
                             </Card>
                         )
