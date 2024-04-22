@@ -1,5 +1,5 @@
 import bg from '../assets/bgnew2.png'
-import resume from '../assets/resume.pdf'
+import resume from '../assets/Aasif_resume.pdf'
 import DownloadIcon from '@mui/icons-material/Download';
 import CallIcon from '@mui/icons-material/Call';
 import { useStickyContext } from '../context/StickyProvider'
@@ -24,8 +24,8 @@ const Home = () => {
                             Aasif Ali
                         </h1>
                         <p className='text-md sm:text-lg'>
-                            I&apos;m a Web Developer,App Developer and AI/ML enthusiast with an art  of crafting the  scalable
-                            applications employing  cutting-edge Technologies like MERN stack, Nextjs, React Native etc. renowned in the market for scalability and excellent performance.
+                            I&apos;m a Web | App Developer with an art of crafting the  scalable
+                            applications Leveraging the cutting-edge Technologies like MERN stack, Nextjs, React Native etc. renowned in the market for scalability and excellent performance.
                         </p>
                         <div className=' z-[30] transition-all duration-200 delay-150 ease-in-out flex flex-row  justify-between md:justify-normal sm:gap-8 px-1 py-4 md:py-8  mt-2 '>
                             <a href='#contact' className='border-2 border-gray-300 rounded-full p-4 hover:bg-white hover:text-black transition-all delay-150 duration-400 ease-in-out'>
