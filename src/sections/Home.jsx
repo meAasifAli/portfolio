@@ -1,5 +1,5 @@
 import bg from '../assets/bgnew2.png'
-import resume from '../assets/Aasif_resume.pdf'
+import resume from '../assets/Aasif_Resume.pdf'
 import DownloadIcon from '@mui/icons-material/Download';
 import CallIcon from '@mui/icons-material/Call';
 import { useStickyContext } from '../context/StickyProvider'
