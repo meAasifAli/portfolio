@@ -31,13 +31,13 @@ const Projects = () => {
             </div>
 
             <div className="flex flex-row  items-center justify-center pb-4 gap-6">
-                <button onClick={() => handleFilter("all")} className={`${activeColorText === "all" ? "bg-[#0bceaf]" : ""} border-2 border-[#0bceaf] rounded-full p-3  hover:bg-[#0bceaf]  transition-all delay-150 duration-400 ease-in-out`}>
+                <button onClick={() => handleFilter("all")} className={`${activeColorText === "all" ? "bg-cyan-800" : ""} border-2 border-cyan-800 rounded-full p-3  hover:bg-cyan-800  transition-all delay-150 duration-400 ease-in-out`}>
                     All
                 </button>
-                <button onClick={() => handleFilter("frontend")} className={`${activeColorText === "frontend" ? "bg-[#0bceaf]" : ""} border-2 border-[#0bceaf] rounded-full p-3  hover:bg-[#0bceaf]   transition-all delay-150 duration-400 ease-in-out`}>
+                <button onClick={() => handleFilter("frontend")} className={`${activeColorText === "frontend" ? "bg-cyan-800" : ""} border-2 border-cyan-800 rounded-full p-3  hover:bg-cyan-800  transition-all delay-150 duration-400 ease-in-out`}>
                     Frontend
                 </button>
-                <button onClick={() => handleFilter("fullstack")} className={`${activeColorText === "fullstack" ? "bg-[#0bceaf]" : ""} border-2 border-[#0bceaf] rounded-full p-3  hover:bg-[#0bceaf]   transition-all delay-150 duration-400 ease-in-out`}>
+                <button onClick={() => handleFilter("fullstack")} className={`${activeColorText === "fullstack" ? "bg-cyan-800" : ""} border-2 border-cyan-800 rounded-full p-3  hover:bg-cyan-800  transition-all delay-150 duration-400 ease-in-out`}>
                     Full Stack
                 </button>
             </div>
@@ -53,7 +53,7 @@ const Projects = () => {
                                     <Image src={item?.thumbnail} />
                                     <Typography variant="paragraph" className="py-2 text-xs" >{item?.content?.slice(0, 100)}..</Typography>
                                     <button className="w-full py-4">
-                                        <a href={item?.GitURl} className='bg-[#0bceaf] p-3 w-full '>
+                                        <a href={item?.GitURl} className='bg-cyan-800 p-3 w-full '>
                                             know more
                                         </a>
                                     </button>

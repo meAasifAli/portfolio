@@ -18,7 +18,7 @@ const Contact = () => {
                     <input type="text" name='name' placeholder='Name' className='w-full rounded-xl bg-white text-black p-4' />
                     <input type="text" name='email' placeholder='Email' className='w-full rounded-xl bg-white text-black p-4' />
                     <textarea name="message" rows={4} placeholder='Message' className='w-full rounded-xl bg-white text-black p-4'></textarea>
-                    <button type='submit' className='w-full rounded-xl bg-[#0bceaf] text-white p-4'>Submit</button>
+                    <button type='submit' className='w-full rounded-xl bg-cyan-800 text-white p-4'>Submit</button>
 
                 </form>
             </div>

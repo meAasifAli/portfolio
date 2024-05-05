@@ -3,7 +3,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 const Footer = () => {
     return (
-        <div className='py-2 bg-[#0bceaf]'>
+        <div className='py-2 bg-cyan-800'>
             <div className=' md:max-w-screen-lg mx-auto sm:h-[50vh] h-[20vh] p-2   rounded-md  flex flex-col items-center  justify-center gap-4'>
                 <div className="flex md:flex flex-row items-center gap-6 justify-center">
                     <a href="https://github.com/Asif45uaha" className='bg-black p-4 rounded-full hover:opacity-80'><GitHubIcon size={30} color='black' /></a>
