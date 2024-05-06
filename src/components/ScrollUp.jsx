@@ -1,4 +1,4 @@
-import { MdKeyboardDoubleArrowUp } from "react-icons/md";
+import KeyboardDoubleArrowUpIcon from '@mui/icons-material/KeyboardDoubleArrowUp';
 
 
 
@@ -11,8 +11,8 @@ const ScrollUp = () => {
         })
     }
     return (
-        <div className="p-2 rounded-full cursor-pointer bg-gray-300">
-            <MdKeyboardDoubleArrowUp onClick={handleScrollUP} size={25} color="black" />
+        <div onClick={handleScrollUP} className="p-2 rounded-full cursor-pointer bg-gray-300">
+            <KeyboardDoubleArrowUpIcon size={25} color="black" />
         </div>
     )
 }
