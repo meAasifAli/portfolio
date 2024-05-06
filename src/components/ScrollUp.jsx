@@ -1,4 +1,5 @@
-import { IoIosArrowUp } from "react-icons/io";
+import { MdKeyboardDoubleArrowUp } from "react-icons/md";
+
 
 
 
@@ -11,7 +12,7 @@ const ScrollUp = () => {
     }
     return (
         <div className="p-2 rounded-full cursor-pointer bg-gray-300">
-            <IoIosArrowUp onClick={handleScrollUP} size={25} color="black" />
+            <MdKeyboardDoubleArrowUp onClick={handleScrollUP} size={25} color="black" />
         </div>
     )
 }
