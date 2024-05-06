@@ -2,15 +2,11 @@ import bg from '../assets/bgnew2.png'
 import resume from '../assets/Aasif_Resume.pdf'
 import DownloadIcon from '@mui/icons-material/Download';
 import CallIcon from '@mui/icons-material/Call';
-import { useStickyContext } from '../context/StickyProvider'
-import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
+
+
 
 const Home = () => {
-    const { showArrow } = useStickyContext()
 
-    const ScrollBottom = () => {
-        window.scrollTo(0, document.body.scrollHeight);
-    }
     return (
         <div id='home' className="z-[30] h-screen   overflow-auto   flex justify-center flex-col">
             <div className="flex flex-col h-screen justify-center transition-all duration-600 delay-300 ease-soft-spring">
@@ -26,10 +22,11 @@ const Home = () => {
                         <h1 className='text-3xl sm:text-6xl font-bold'>
                             Aasif Ali
                         </h1>
-                        <p className='text-md sm:text-xl'>
+                        <p className='text-md sm:text-xl'>Web | App Developer</p>
+                        {/* <p className='text-md sm:text-xl'>
                             I&apos;m a <strong>Web | App</strong> Developer with an art of crafting the  <strong>scalable</strong> {" "}
                             applications by Leveraging the cutting-edge Technologies such as <strong>MERN </strong> stack, <strong>Nextjs</strong> , <strong>React Native</strong> etc. renowned in the market for scalability and excellent performance.
-                        </p>
+                        </p> */}
                         <p className='text-sm sm:text-md'>
                             I&apos;m a <strong>Fast</strong> and <strong>adaptive</strong> learner with a strong sense of <strong>responsibility</strong> and a <strong>passion</strong> for <strong>problem-solving</strong>.
                             I&apos;m always looking for new challenges and opportunities to grow and improve my skills as a professional.
@@ -45,12 +42,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div onClick={ScrollBottom} className='flex justify-center items-center pb-4 animate-fade-down animate-infinite animate-duration-[3000ms] animate-ease-out'>
-                {
-                    showArrow &&
-                    <KeyboardDoubleArrowDownIcon color='white' sx={{ fontSize: 40 }} />
-                }
-            </div>
+
         </div>
     )
 }

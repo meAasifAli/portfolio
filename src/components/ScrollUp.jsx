@@ -11,7 +11,7 @@ const ScrollUp = () => {
         })
     }
     return (
-        <div onClick={handleScrollUP} className="p-2 rounded-full cursor-pointer bg-gray-300">
+        <div onClick={handleScrollUP} className="p-2 rounded-full cursor-pointer bg-gray-800">
             <KeyboardDoubleArrowUpIcon size={25} color="black" />
         </div>
     )

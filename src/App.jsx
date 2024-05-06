@@ -1,6 +1,6 @@
 import { lazy, Suspense } from "react"
 // import Loader from "./components/Loader"
-import { useStickyContext } from "./context/StickyProvider"
+import { useStickyContext } from "./constants/index"
 import ScrollUp from "./components/ScrollUp"
 
 const About = lazy(() => import("./sections/About"))

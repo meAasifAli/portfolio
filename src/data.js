@@ -113,91 +113,91 @@ export const expData = [
     {
         id: 1,
         title: "Html",
-        progressVal: 80,
+        SkillLevel: 80,
         src: "https://clipartcraft.com/images/html5-logo-png-transparent-5.png"
     },
     {
         id: 2,
         title: "Css",
-        progressVal: 60,
+        SkillLevel: 60,
         src: "https://www.freepnglogos.com/uploads/html5-logo-png/html5-logo-css-logo-png-transparent-svg-vector-bie-supply-9.png"
     },
     {
         id: 3,
         title: "Js",
-        progressVal: 70,
+        SkillLevel: 70,
         src: "https://static.vecteezy.com/system/resources/previews/012/697/298/non_2x/3d-javascript-logo-design-free-png.png"
     },
     {
         id: 4,
         title: "Python",
-        progressVal: 50,
+        SkillLevel: 50,
         src: "https://www.pngall.com/wp-content/uploads/5/Python-Transparent.png"
     },
     {
         id: 6,
         title: "React",
-        progressVal: 70,
+        SkillLevel: 70,
         src: "https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png"
     },
     {
         id: 7,
         title: "Mysql",
-        progressVal: 50,
+        SkillLevel: 50,
         src: "https://www.pngplay.com/wp-content/uploads/7/Mysql-Logo-PNG-Photos.png"
     },
     {
         id: 8,
         title: "Tailwind",
-        progressVal: 60,
+        SkillLevel: 60,
         src: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/1024px-Tailwind_CSS_Logo.svg.png?20230715030042"
     },
     {
         id: 9,
         title: "MongoDB",
-        progressVal: 70,
+        SkillLevel: 70,
         src: "https://dwglogo.com/wp-content/uploads/2017/12/MongoDB_logo_01.png"
     },
     {
         id: 11,
         title: "Firebase",
-        progressVal: 60,
+        SkillLevel: 60,
         src: "https://pluspng.com/img-png/firebase-logo-png-firebase-google-icon-512x512.png"
     },
     {
         id: 12,
         title: "REST API",
-        progressVal: 80,
+        SkillLevel: 80,
         src: "https://icon-library.com/images/rest-api-icon/rest-api-icon-8.jpg"
     },
     {
         id: 13,
         title: "Node.js",
-        progressVal: 60,
+        SkillLevel: 60,
         src: "https://cdn.freebiesupply.com/logos/large/2x/nodejs-icon-logo-png-transparent.png"
     },
     {
         id: 14,
         title: "React Native/Expo",
-        progressVal: 60,
+        SkillLevel: 60,
         src: "https://shopify.github.io/react-native-skia/img/logo.png"
     },
     {
         id: 14,
         title: "Postgresql",
-        progressVal: 60,
+        SkillLevel: 60,
         src: "https://cdn.freebiesupply.com/logos/thumbs/2x/postgresql-logo.png"
     },
     {
         id: 15,
         title: "Docker",
-        progressVal: 50,
+        SkillLevel: 50,
         src: "https://logos-world.net/wp-content/uploads/2021/02/Docker-Emblem.png"
     },
     {
         id: 16,
         title: "Github",
-        progressVal: 60,
+        SkillLevel: 60,
         src: "https://www.shareicon.net/data/512x512/2015/09/25/107141_network_512x512.png"
     }
 ]
