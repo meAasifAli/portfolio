@@ -132,7 +132,7 @@ export const expData = [
         id: 4,
         title: "Python",
         progressVal: 50,
-        src: "https://th.bing.com/th/id/R.8c1719d731849436c9b734d7d65e9558?rik=bSbWm6hjVbDSPg&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fpython-logo-png-big-image-png-2400.png&ehk=QVy%2f7oOiTJ16YDb0ys7dyNAHnvvwPX1WAaD7AvoVnTU%3d&risl=&pid=ImgRaw&r=0"
+        src: "https://www.pngall.com/wp-content/uploads/5/Python-Transparent.png"
     },
     {
         id: 6,
@@ -176,6 +176,30 @@ export const expData = [
         progressVal: 60,
         src: "https://cdn.freebiesupply.com/logos/large/2x/nodejs-icon-logo-png-transparent.png"
     },
+    {
+        id: 14,
+        title: "React Native/Expo",
+        progressVal: 60,
+        src: "https://shopify.github.io/react-native-skia/img/logo.png"
+    },
+    {
+        id: 14,
+        title: "Postgresql",
+        progressVal: 60,
+        src: "https://cdn.freebiesupply.com/logos/thumbs/2x/postgresql-logo.png"
+    },
+    {
+        id: 15,
+        title: "Docker",
+        progressVal: 50,
+        src: "https://logos-world.net/wp-content/uploads/2021/02/Docker-Emblem.png"
+    },
+    {
+        id: 16,
+        title: "Github",
+        progressVal: 60,
+        src: "https://www.shareicon.net/data/512x512/2015/09/25/107141_network_512x512.png"
+    }
 ]
 
 export const projectsData = [

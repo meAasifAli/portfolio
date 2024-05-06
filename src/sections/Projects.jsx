@@ -31,13 +31,13 @@ const Projects = () => {
             </div>
 
             <div className="flex flex-row  items-center justify-center pb-4 gap-6">
-                <button onClick={() => handleFilter("all")} className={`${activeColorText === "all" ? "bg-cyan-800" : ""} border-2 border-cyan-800 rounded-full p-3  hover:bg-cyan-800  transition-all delay-150 duration-400 ease-in-out`}>
+                <button onClick={() => handleFilter("all")} className={`${activeColorText === "all" ? "bg-gray-800" : ""} border-2 border-gray-800 rounded-full p-3  hover:bg-white hover:text-black hover:border-white  transition-all delay-150 duration-400 ease-in-out`}>
                     All
                 </button>
-                <button onClick={() => handleFilter("frontend")} className={`${activeColorText === "frontend" ? "bg-cyan-800" : ""} border-2 border-cyan-800 rounded-full p-3  hover:bg-cyan-800  transition-all delay-150 duration-400 ease-in-out`}>
+                <button onClick={() => handleFilter("frontend")} className={`${activeColorText === "frontend" ? "bg-gray-800" : ""} border-2 border-gray-800 rounded-full p-3  hover:bg-white hover:text-black hover:border-white  transition-all delay-150 duration-400 ease-in-out`}>
                     Frontend
                 </button>
-                <button onClick={() => handleFilter("fullstack")} className={`${activeColorText === "fullstack" ? "bg-cyan-800" : ""} border-2 border-cyan-800 rounded-full p-3  hover:bg-cyan-800  transition-all delay-150 duration-400 ease-in-out`}>
+                <button onClick={() => handleFilter("fullstack")} className={`${activeColorText === "fullstack" ? "bg-gray-800" : ""} border-2 border-gray-800 rounded-full p-3  hover:bg-white hover:text-black hover:border-white  transition-all delay-150 duration-400 ease-in-out`}>
                     Full Stack
                 </button>
             </div>
@@ -45,7 +45,7 @@ const Projects = () => {
                 {
                     cards.map((item, index) => {
                         return (
-                            <Card className="py-6 w-[95%] sm:h-[350px] mx-auto  shadow-md shadow-[#0bceaf] bg-clip-padding backdrop-filter backdrop-blur-3xl bg-opacity-20 via-transparent sm:w-[30%]" key={index}>
+                            <Card className="py-6 w-[90%] sm:h-[350px] mx-auto  shadow-md  bg-clip-padding backdrop-filter backdrop-blur-3xl bg-opacity-20 via-transparent sm:w-[25%]" key={index}>
                                 <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
                                     <p className="text-tiny uppercase font-bold">{item?.title}</p>
                                 </CardHeader>
@@ -53,7 +53,7 @@ const Projects = () => {
                                     <Image src={item?.thumbnail} />
                                     <Typography variant="paragraph" className="py-2 text-xs" >{item?.content?.slice(0, 100)}..</Typography>
                                     <button className="w-full py-4">
-                                        <a href={item?.GitURl} className='bg-cyan-800 p-3 w-full '>
+                                        <a href={item?.GitURl} className=' bg-clip-padding backdrop-filter backdrop-blur-2xl shadow-lg bg-opacity-30 bg-gray-500 p-3 w-full rounded-lg'>
                                             know more
                                         </a>
                                     </button>

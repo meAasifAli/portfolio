@@ -12,7 +12,6 @@ const StickyProvider = ({ children }) => {
             if (window.scrollY > 0) {
                 setSticky(true)
                 setShowArrow(false)
-
             }
             else {
                 setSticky(false)

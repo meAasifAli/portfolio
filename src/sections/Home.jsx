@@ -8,15 +8,18 @@ import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrow
 const Home = () => {
     const { showArrow } = useStickyContext()
 
+    const ScrollBottom = () => {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
     return (
-        <div id='home' className='z-[30] h-screen bg-gradient-to-tr from-cyan-800 to-black/20  overflow-auto   flex justify-center flex-col'>
+        <div id='home' className="z-[30] h-screen   overflow-auto   flex justify-center flex-col">
             <div className="flex flex-col h-screen justify-center transition-all duration-600 delay-300 ease-soft-spring">
-                <div className=" px-4 gap-4 md:gap-8  md:max-w-screen-lg mx-auto flex flex-col md:flex-row-reverse
+                <div className=" px-4 gap-4 md:gap-8  md:max-w-screen-2xl mx-auto flex flex-col md:flex-row-reverse
              md:justify-between items-center">
-                    <div>
-                        <img src={bg} alt="error" className='rounded-full h-[280px] w-[280px] md:h-[400px] md:w-[400px]' />
+                    <div >
+                        <img src={bg} alt="error" className='rounded-full h-[260px] w-[260px] md:h-[400px] md:w-[400px]' />
                     </div>
-                    <div className='flex text-white tracking-wider flex-col gap-2 md:gap-4 transition 0.3s ease-in-out md:w-1/2'>
+                    <div className="flex text-white tracking-wider flex-col gap-2 md:gap-4 transition 0.3s ease-in-out md:w-1/2">
                         <h4>
                             Hello I&apos;m
                         </h4>
@@ -42,7 +45,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div className='flex justify-center items-center pb-4 animate-fade-down animate-infinite animate-duration-[3000ms] animate-ease-out'>
+            <div onClick={ScrollBottom} className='flex justify-center items-center pb-4 animate-fade-down animate-infinite animate-duration-[3000ms] animate-ease-out'>
                 {
                     showArrow &&
                     <KeyboardDoubleArrowDownIcon color='white' sx={{ fontSize: 40 }} />
