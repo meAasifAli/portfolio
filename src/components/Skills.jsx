@@ -19,7 +19,7 @@ const Skills = ({ expData }) => {
                     <CartesianGrid strokeDasharray="3 3" />
                     <XAxis dataKey="title" fontSize={"15px"} fontWeight={"bold"} />
                     <Tooltip />
-                    <Area dataKey="SkillLevel" fill="#1d0bdf" />
+                    <Area dataKey="SkillLevel" fill="#000" />
 
                 </AreaChart>
 
