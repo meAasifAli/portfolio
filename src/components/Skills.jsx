@@ -1,29 +1,9 @@
-import { AreaChart, Area, XAxis, CartesianGrid, Tooltip } from 'recharts';
+
 
 
 const Skills = ({ expData }) => {
     return (
         <div className="flex flex-col justify-center items-center  gap-2 w-full">
-            <div className='text-black w-full h-full overflow-x-scroll flex justify-center items-center'>
-                <AreaChart
-                    width={800}
-                    height={500}
-                    data={expData}
-                    margin={{
-                        top: 5,
-                        right: 30,
-                        left: 20,
-                        bottom: 5,
-                    }}
-                >
-                    <CartesianGrid strokeDasharray="3 3" />
-                    <XAxis dataKey="title" fontSize={"15px"} fontWeight={"bold"} />
-                    <Tooltip />
-                    <Area dataKey="SkillLevel" fill="#000" />
-
-                </AreaChart>
-
-            </div>
             <div className="flex flex-row flex-wrap items-start justify-center gap-4">
                 {
                     expData.map((item, id) => {

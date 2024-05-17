@@ -12,7 +12,7 @@ const Home = () => {
             <div className="flex flex-col h-screen justify-center transition-all duration-600 delay-300 ease-soft-spring">
                 <div className=" px-4 gap-4 md:gap-8  md:max-w-screen-2xl mx-auto flex flex-col md:flex-row-reverse
              md:justify-between items-center">
-                    <div >
+                    <div className='animate-fade-left animate-delay-200 animate-duration-500'>
                         <img src={bg} alt="error" className='rounded-full h-[260px] w-[260px] md:h-[400px] md:w-[400px]' />
                     </div>
                     <div className="flex text-white tracking-wider flex-col gap-2 md:gap-4 transition 0.3s ease-in-out md:w-1/2">
@@ -23,10 +23,7 @@ const Home = () => {
                             Aasif Ali
                         </h1>
                         <p className='text-md sm:text-xl'>Web | App Developer</p>
-                        {/* <p className='text-md sm:text-xl'>
-                            I&apos;m a <strong>Web | App</strong> Developer with an art of crafting the  <strong>scalable</strong> {" "}
-                            applications by Leveraging the cutting-edge Technologies such as <strong>MERN </strong> stack, <strong>Nextjs</strong> , <strong>React Native</strong> etc. renowned in the market for scalability and excellent performance.
-                        </p> */}
+
                         <p className='text-sm sm:text-md'>
                             I&apos;m a <strong>Fast</strong> and <strong>adaptive</strong> learner with a strong sense of <strong>responsibility</strong> and a <strong>passion</strong> for <strong>problem-solving</strong>.
                             I&apos;m always looking for new challenges and opportunities to grow and improve my skills as a professional.

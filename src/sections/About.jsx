@@ -38,14 +38,14 @@ const About = () => {
                         </div>
                         <div className='flex flex-col gap-4'>
                             <h4>Address : Sanzipora B.K Pora Budgam  </h4>
-                            <h4>Experience : Fresher</h4>
+                            <h4>Experience : 1 month(Frontend Developer)</h4>
                             <h4>Email : asif15310@gmail.com</h4>
                         </div>
                     </div>
                     <div className="hidden sm:flex  flex-row items-center justify-center sm:justify-start gap-6 ">
-                        <a href="https://github.com/Asif45uaha" className='bg-clip-padding backdrop-filter backdrop-blur-xl shadow-md bg-opacity-20  p-4 rounded-full hover:opacity-80 hover:scale-105 transition-all delay-75 duration-200 ease-in-out'><GitHubIcon size={30} color='black' /></a>
-                        <a href="https://www.instagram.com/_asif_ali10" className='bg-clip-padding backdrop-filter backdrop-blur-xl shadow-md bg-opacity-20  p-4 rounded-full hover:opacity-80 hover:scale-105 transition-all delay-75 duration-200 ease-in-out'><InstagramIcon color='black' size={30} /></a>
-                        <a href="https://www.linkedin.com/in/aasif-ali-6909b8200" className='bg-clip-padding backdrop-filter backdrop-blur-xl shadow-md bg-opacity-20  p-4 rounded-full hover:opacity-80 hover:scale-105 transition-all delay-75 duration-200 ease-in-out'><LinkedInIcon color='black' size={30} /></a>
+                        <a href="https://github.com/Asif45uaha" className='bg-clip-padding backdrop-filter backdrop-blur-xl shadow-md bg-opacity-20  p-4 rounded-full hover:opacity-80 hover:scale-105 transition-all delay-75 duration-200 ease-in-out animate-pulse animate-ease-linear animate-infinite animate-delay-200 animate-duration-1000'><GitHubIcon size={30} color='black' /></a>
+                        <a href="https://www.instagram.com/_asif_ali10" className='bg-clip-padding backdrop-filter backdrop-blur-xl shadow-md bg-opacity-20  p-4 rounded-full hover:opacity-80 hover:scale-105 transition-all delay-75 duration-200 ease-in-out animate-pulse animate-ease-linear animate-infinite animate-delay-200 animate-duration-1000'><InstagramIcon color='black' size={30} /></a>
+                        <a href="https://www.linkedin.com/in/aasif-ali-6909b8200" className='bg-clip-padding backdrop-filter backdrop-blur-xl shadow-md bg-opacity-20  p-4 rounded-full hover:opacity-80 hover:scale-105 transition-all delay-75 duration-200 ease-in-out animate-pulse animate-ease-linear animate-infinite animate-delay-200 animate-duration-1000'><LinkedInIcon color='black' size={30} /></a>
                     </div>
                 </div>
             </div>

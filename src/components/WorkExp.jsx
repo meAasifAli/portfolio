@@ -20,9 +20,9 @@ const WorkExp = () => {
         {
             id: 2,
             title: "Front Developer Team Lead (Aharbal)",
-            duration: "2 Months (present)",
+            duration: "Working(1 month)",
             work: "Remote",
-            description: "Working as a Frontend Developer Intern, My work is to build an admin panel for SabeelConnect Project using React and Typescript. I have implemented various features and bug fixes, Learned new containerization technology such as docker to make the applications production ready"
+            description: "Working as a Frontend Developer Intern, My work is to build a Web Version of SabeelConnect Project which is a platform for mental and spiritual growth.I am working alongside experienced professionals such as Android developers, Backend Developers etc. I have leveraged Cutting Edge frontend technologies such as React.js along with Typescript and Tanstack router for navigation."
         },
     ]
     return (

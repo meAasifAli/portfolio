@@ -13,7 +13,7 @@ const Services = () => {
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-16 w-full sm:w-[80%] mx-auto px-2 sm:px-0">
                 {serviceData.map((service, index) => {
-                    return <div key={index} className=" bg-clip-padding backdrop-filter backdrop-blur-2xl shadow-lg bg-opacity-30 flex flex-col gap-2 sm:gap-6 justify-start items-start  p-4 sm:p-8 rounded-lg">
+                    return <div key={index} className=" bg-clip-padding backdrop-filter backdrop-blur-2xl shadow-lg bg-opacity-30 flex flex-col gap-2 sm:gap-6 justify-start items-start  p-4 sm:p-8 rounded-lg transition-transform ease-soft-spring duration-700 delay-75 hover:skew-y-2">
                         <div className="flex items-center gap-2 ">
                             <img src={service?.icon} className="h-12 w-12 object-contain" alt="error" />
                             <h2 className="text-xl font-bold">{service?.title}</h2>

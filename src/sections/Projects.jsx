@@ -45,7 +45,7 @@ const Projects = () => {
                 {
                     cards.map((item, index) => {
                         return (
-                            <Card className="py-6 w-[90%] sm:h-[350px] mx-auto  shadow-md  bg-clip-padding backdrop-filter backdrop-blur-3xl bg-opacity-20 via-transparent sm:w-[25%]" key={index}>
+                            <Card className="py-6 w-[90%] sm:h-[350px] mx-auto  shadow-md  bg-clip-padding backdrop-filter backdrop-blur-3xl bg-opacity-20 via-transparent sm:w-[25%] transition-transform duration-300 delay-75 ease-soft-spring hover:scale-105" key={index}>
                                 <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
                                     <p className="text-tiny uppercase font-bold">{item?.title}</p>
                                 </CardHeader>
