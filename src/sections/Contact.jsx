@@ -14,7 +14,7 @@ const Contact = () => {
             </div>
             <div className='w-full grid sm:grid-cols-2 p-4 sm:p-0 mx-auto'>
                 <form className='flex flex-col justify-center gap-4 md:gap-6 items-start w-full sm:w-[50%] mx-auto' action="https://getform.io/f/38778926-87ed-4562-9b03-a2309121f440" method='POST'>
-                    <p className='text-gray-200'>Nice To Meet You!</p>
+                    <p className='text-gray-200'>Let&apos;s Connect</p>
 
                     <input type="text" name='name' placeholder='Name' className='w-full rounded-xl p-4  bg-gray-800 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-20 focus-within:bg-transparent border-none outline-none' />
                     <input type="text" name='email' placeholder='Email' className='w-full rounded-xl p-4  bg-gray-800 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-20 focus-within:bg-transparent border-none outline-none' />

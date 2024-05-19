@@ -4,6 +4,7 @@ import { Typography } from "@material-tailwind/react";
 import { useState } from "react";
 import Divider from "../components/Divider";
 
+
 const Projects = () => {
     const [cards, setCards] = useState(projectsData);
     const [activeColorText, setActiveColorText] = useState("all")
@@ -41,7 +42,8 @@ const Projects = () => {
                     Full Stack
                 </button>
             </div>
-            <div className="transition duration-300 delay-75 ease-in-out flex flex-col md:flex-row md:flex-wrap  gap-4 md:gap-8 sm:max-w-screen-xl mx-auto">
+            <div
+                className="transition duration-300 delay-75 ease-in-out flex flex-col md:flex-row md:flex-wrap  gap-4 md:gap-8 sm:max-w-screen-xl mx-auto">
                 {
                     cards.map((item, index) => {
                         return (

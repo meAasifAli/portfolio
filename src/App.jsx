@@ -25,7 +25,6 @@ function App() {
           }
         </div>
         <div className="w-full relative  space-y-4 sm:space-y-16 z-[40]">
-
           <Home />
           <About />
           <Experience />

@@ -42,7 +42,7 @@ span {
 }
 
 body {
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)),
     url("https://wallpaperbat.com/img/87407-download-wallpaper-2560x1440-code-coding-binary-code-abstract.jpg");
   background-repeat: no-repeat;
   background-size: cover;
